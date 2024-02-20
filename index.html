@@ -190,14 +190,12 @@
                 main.removeClass('tm-footer-relative');   
             }
         }
-        /* DOM is ready
-        ------------------------------------------------*/
         $(function(){
             setupFooter();
             $(window).resize(function(){
                 setupFooter();
             });
-            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+            $('.tm-current-year').text(new Date().getFullYear());        
         });
     </script>
     <script>
