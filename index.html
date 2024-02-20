@@ -4,39 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tenebrae</title>
-  <link rel="stylesheet" href="res/style.css">
-  <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta name="description" content="This webpage is a collection of ctinnil's projects spanning from 2018 to present day. It also includes an embedded chatbot for interaction.">
   <meta name="keywords" content="ctinnil, projects, portfolio, chatbot, AI, ML, LLM, ChatGPT, development, Lumiere, Trefoil, Eclair">
-  <style>
-    /* Add your existing CSS styles here */
 
-    /* Media queries for mobile */
-    @media only screen and (max-width: 600px) {
-      .title {
-        font-size: 16px;
-      }
-      .body {
-        font-size: 14px;
-      }
-    }
-    /* Media queries for tablet */
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-      .title {
-        font-size: 18px;
-      }
-      .body {
-        font-size: 16px;
-      }
-    }
-    /* Media queries for desktop */
-    @media only screen and (min-width: 1025px) {
-      /* Add your desktop-specific styles here */
-    }
-  </style>
+
 </head>
 <body>
-  <!-- Your existing HTML code here -->
   <div class="burger-menu">
     <div class="menu-icon">
       <span></span>
@@ -51,10 +26,9 @@
       </ul>
     </div>
   </div>
-
   <div class="entries">
     <div class="entry">
-      <div class="title">2011</div>
+      <div class="title">2018</div>
       <div class="body">
         <p>Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum suscipit eveniet amet dignissimos. Doloremque et distinctio quod molestiae ut.</p>
       </div>
@@ -97,8 +71,26 @@
       </div>
     </div>
   </div>
-
-  <script src="res/script.js"></script>
+/* Media queries for mobile */
+@media only screen and (max-width: 600px) {
+  .timeline {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .timeline .line {
+    order: 1; /* This will place the line to the left */
+  }
+  .timeline .lifs {
+    order: 2; /* This will place the text to the right */
+  }
+  .title {
+    font-size: 16px;
+  }
+  .body {
+    font-size: 14px;
+  }
+}
+  <script src="js/script.js"></script>
 
   <script>
     window.embeddedChatbotConfig = {

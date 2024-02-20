@@ -1,0 +1,38 @@
+.entries {
+  display: flex;
+  flex-direction: row;
+}
+
+.entries .entry {
+  order: 1; /* This will place the line to the left */
+}
+
+.entries .leaf {
+  order: 2; /* This will place the text to the right */
+}
+
+.title {
+  font-size: 1em;
+}
+
+.body {
+  font-size: 0.875em;
+}
+
+/* Media queries for mobile */
+@media only screen and (max-width: 600px) {
+  .entries {
+    flex-direction: row-reverse;
+  }
+  .entries .entry {
+    order: 2; /* This will place the line to the right */
+  }
+  .entries .leaf {
+    order: 1; /* This will place the text to the left */
+  }
+}
+
+/* Media queries for desktop */
+@media only screen and (min-width: 1025px) {
+  /* Add your desktop-specific styles here */
+}
