@@ -173,7 +173,7 @@
             <footer>
                 <p class="small tm-copyright-text">
                     <span id="copyright">
-                        Copyright &copy; <span class="tm-current-year"> getFullYear</span> Tenebrae.
+                        Copyright &copy; <span class="tm-current-year"> <span id="currentYear"></span></span> Tenebrae.
                     </span>
                 </p>
             </footer>
@@ -201,6 +201,9 @@
             });
             $('.tm-current-year').text(new Date().getFullYear());        
         });
+    </script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
     <script>
         window.embeddedChatbotConfig = {
