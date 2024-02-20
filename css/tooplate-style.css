@@ -112,7 +112,7 @@ p {
 }
 
 .product:hover {
-  background: #3c3c3f;
+  background: #888888;
   color: #a9a9a9;
 }
 
@@ -198,7 +198,7 @@ p {
 }
 
 .details__bg--down {
-  background: #2c2a35;
+  background: #2f2F2F;
 }
 
 .details__bg {
