@@ -1,118 +1,32 @@
-/* CSS content with additional styles for the timeline, including responsive design and interactive elements */
-body {
-  background-color:#1D1D1D;
-  min-height:100vh;
-  margin:0;
-  font-family: 'Droid Sans', sans-serif;
-}
-body:before {
-  content: '';
-  position: fixed;
-  top:0px;
-  left:50%;
-  bottom:0px;
-  transform:translateX(-50%);
-  width:4px;
-  background-color:#fff;
-}
-.entries {
-  width:calc(100% - 80px);
-  max-width:800px;
-  margin:auto;
-  position: relative;
-  left:-5px;
-}
-.entry {
-  width:calc(50% - 80px);
-  float:left; 
-  padding:20px;
-  clear:both;
-  text-align:right;
-}
-.entry:not(:first-child) {
-  margin-top:-60px;
-}
-.title {
-  font-size:32px;
-  margin-bottom:12px;
-  position: relative;
-  color:#fff;
-}
-.title:before {
-  content: '';
-  position: absolute;
-  width:8px;
-  height:8px;
-  border:4px solid #ffffff;
-  background-color:#1D1D1D;
-  border-radius:100%;
-  top:50%;
-  transform:translateY(-50%);
-  right:-73px;
-  z-index:1000;
-}
-.title.big:before {
-  width:24px;
-  height:24px;
-  transform:translate(8px,-50%);
-}
-.body {
-  color:#aaa;
-}
-.body p {
-  line-height:1.4em;
-}
-.entry:nth-child(2n) {
-  text-align:left;
-  float:right;
-}
-.entry:nth-child(2n) .title:before {
-  left:-63px;
-}
-.entry:nth-child(2n) .title.big:before {
-  transform:translate(-8px,-50%);
+let currentSlide = 0;
+showSlides(currentSlide);
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu ul');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
 }
 
-/* Additional styles for top banner, hamburger menu, and developer description */
-.top-banner {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.hamburger-menu {
-  position: absolute;
-  left: 20px;
-  font-size: 30px;
-  cursor: pointer;
-}
-.developer-description {
-  background-color: #242424;
-  color: #ddd;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+function showSlides(n) {
+    const slides = document.getElementsByClassName('slide');
+    if (n >= slides.length) {
+        currentSlide = 0;
+    } else if (n < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = n;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    
+    slides[currentSlide].style.display = 'block';
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .entries {
-    width: calc(100% - 40px);
-  }
-  .entry {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .entry:nth-child(2n) {
-    float: none;
-  }
-  .title:before {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%) translateY(-50%);
-  }
+function moveSlide(n) {
+    showSlides(currentSlide += n);
 }
