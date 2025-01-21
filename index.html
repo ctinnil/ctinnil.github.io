@@ -3,14 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore Tenebrae.ro, where cybersecurity expertise converges with cutting-edge AI and machine learning innovations. Join us in unlocking intelligent technologies.">
-    <meta name="description" content="Meet the cybersecurity expert and AI enthusiast behind Tenebrae.ro. Discover a journey dedicated to pioneering intelligent technology solutions.">
-    <meta name="description" content="Explore innovative projects at Tenebrae.ro, including Lumiere, CO5, PP_Trefoil, and more—advancing AI and cybersecurity frontiers.">
-    <meta name="description" content="Connect with Tenebrae.ro for collaborations or inquiries. Reach out via Twitter, GitHub, Instagram, or email—we'd love to hear from you.">
-    <meta name="description" content="Discover Lumiere, a Cyber Data Miner specializing in preparing datasets for machine learning applications. Enhance your AI projects with Tenebrae.ro.">
+    <meta name="description" content="Explore Tenebrae.ro, where cybersecurity expertise meets AI and machine learning. Discover innovative tools, projects, and insights from a seasoned expert in digital forensics and technology.">
+    <meta name="keywords" content="Tenebrae, cybersecurity, AI, machine learning, digital forensics, Lumiere, CO5 Datasets, PP_Trefoil">
+    <meta property="og:title" content="Tenebrae – Cybersecurity and AI Innovations">
+    <meta property="og:description" content="Explore tools, projects, and insights from an expert in cybersecurity and AI at Tenebrae.ro.">
+    <meta property="og:image" content="https://www.tenebrae.ro/img/welcome-1.png">
+    <meta property="og:url" content="https://www.tenebrae.ro">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tenebrae – Cybersecurity and AI Innovations">
+    <meta name="twitter:description" content="Explore tools, projects, and insights from an expert in cybersecurity and AI at Tenebrae.ro.">
+    <meta name="twitter:image" content="https://www.tenebrae.ro/img/welcome-1.png">
     <title>Tenebrae</title>
     <!-- load CSS -->
-    <link rel="icon" href="img/welcome-1.png" type="image/png">
+    <link rel="preload" href="img/welcome-1.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300" as="style">
+    <link rel="icon" href="https://www.tenebrae.ro/img/welcome-1.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
@@ -74,7 +82,7 @@
                                                         <p class="mb-4">More tools and valuable materials will be added to this page. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>
                                                     </div>                                                
                                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                        <img src="img/lumiere_logo.png"  class="img-fluid">
+                                                        <img src="img/lumiere_logo.png" alt="Lumiere Cyber Data Miner Logo" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -106,7 +114,7 @@
                                                             <div class="tm-img-slider" id="tmImgSlider">
                                                                 <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link"><img src="img/lumiere.gif" alt="Lumiere" class="img-fluid tm-slider-img"></a>
                                                                 <p>Try <strong>Lumiere</strong> on OpenAI Store Lumiere is a Cyber Data Miner specialized in preparing datasets for machine learning (ML) and deep learning (DL) applications. Their expertise encompasses data cleaning, preprocessing, feature extraction, and handling data formatting challenges to ensure datasets are suitable for ML/DL use. Lumiere provides academically professional and detailed responses, akin to academic or professional publications, with a focus on delivering precise information tailored for users with a solid understanding of data science and ML principles. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>                                                                
-                                                                <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link"><img src="img/CO5.png" alt="CO5" class="img-fluid tm-slider-img"></a>
+                                                                <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link"><img src="img/CO5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img"></a>
                                                                 <p>Explore <strong>CO5 Datasets</strong> on GitHub, a comprehensive collection of machine learning datasets curated to fuel innovative projects and research. This repository is a treasure trove for data scientists and researchers looking for diverse and high-quality datasets to power machine learning models and analytics. Whether you're working on AI, deep learning, or predictive analytics, find the data you need to push the boundaries of technology. <a href="https://github.com/ctinnil/CY0P5_ML_Datasets">More</a></p>
                                                                 <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link"><img src="img/PP_Trefoil.gif" alt="PP_Trefoil" class="img-fluid tm-slider-img"></a>
                                                                 <p>Check out <strong>PP_Trefoil</strong> on GitHub, a groundbreaking software designed for intricate pattern generation and design. With its unique algorithms, PP_Trefoil enables users to create complex, beautiful patterns effortlessly. Ideal for designers, artists, and creatives looking for innovative design tools. <a href="https://github.com/ctinnil/PP_Trefoil">More</a></p>
@@ -168,9 +176,7 @@
             </div>
             <footer>
                 <p class="small tm-copyright-text">
-                    <span id="copyright">
-                        Copyright &copy; <span class="tm-current-year"> <span id="currentYear"></span></span> Tenebrae.
-                    </span>
+                    <span>&copy; <script>document.write(new Date().getFullYear());</script> Tenebrae. All rights reserved.</span>
                 </p>
             </footer>
         </div> <!-- .tm-main-content -->  
@@ -178,7 +184,7 @@
     <!-- load JS -->
      <!-- <script src="js/jquery-3.6.0.min.js"></script>         <!-- https://jquery.com/ -->    
     <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
-    <script src="js/main.js"></script>  
+    <script src="js/main.js" defer></script>  
     <script>
         function setupFooter() {
             var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
@@ -198,9 +204,7 @@
             $('.tm-current-year').text(new Date().getFullYear());        
         });
     </script>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
     <script>
         window.embeddedChatbotConfig = {
         chatbotId: "OXXFUEgAa3ZlPzKRWp75u",
