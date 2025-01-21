@@ -9,13 +9,8 @@ Disallow: /tmp/
 Disallow: /search/
 Disallow: /checkout/
 Disallow: /cgi-bin/
-
-# If critical assets are stored in specific directories, ensure they are crawlable
-# Uncomment and modify these as needed:
-# Allow: /assets/
-# Allow: /images/
-# Allow: /styles/
-# Allow: /scripts/
+Allow: /
+Sitemap: https://tenebrae.ro/sitemap.xml
 
 # Block known malicious user agents
 User-agent: sqlmap
@@ -45,9 +40,8 @@ Disallow: /
 User-agent: python-requests
 Disallow: /
 
-# Specify the location of the sitemap
-User-agent: *
-Allow: /
-Sitemap: https://tenebrae.ro/sitemap.xml
+# Optional: Specify crawl delays or block query parameters if needed
+# Crawl-delay: 10
+# Disallow: /*?filter=
 
 # End of robots.txt
