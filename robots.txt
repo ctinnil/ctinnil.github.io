@@ -46,6 +46,8 @@ User-agent: python-requests
 Disallow: /
 
 # Specify the location of the sitemap
-Sitemap: https://www.tenebrae.ro/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://tenebrae.ro/sitemap.xml
 
 # End of robots.txt
