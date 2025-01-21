@@ -1,0 +1,51 @@
+# robots.txt for Tenebrae.ro
+# Prevent malicious crawlers and bots while allowing legitimate search engines
+
+# Allow all search engines to index the website
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /search/
+Disallow: /checkout/
+Disallow: /cgi-bin/
+
+# If critical assets are stored in specific directories, ensure they are crawlable
+# Uncomment and modify these as needed:
+# Allow: /assets/
+# Allow: /images/
+# Allow: /styles/
+# Allow: /scripts/
+
+# Block known malicious user agents
+User-agent: sqlmap
+Disallow: /
+
+User-agent: ZmEu
+Disallow: /
+
+User-agent: w00tw00t
+Disallow: /
+
+User-agent: Morfeus
+Disallow: /
+
+User-agent: Nmap
+Disallow: /
+
+User-agent: Nessus
+Disallow: /
+
+User-agent: libwww-perl
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+# Specify the location of the sitemap
+Sitemap: https://www.tenebrae.ro/sitemap.xml
+
+# End of robots.txt
