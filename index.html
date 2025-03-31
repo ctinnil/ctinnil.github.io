@@ -15,32 +15,30 @@
     <meta name="twitter:description" content="Explore tools, projects, and insights from an expert in cybersecurity and AI at Tenebrae.ro.">
     <meta name="twitter:image" content="https://www.tenebrae.ro/img/welcome-1.png">
     <meta property="og:locale" content="en_US">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com https://www.chatbase.co 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://img.shields.io data:; connect-src 'self' https://www.chatbase.co; frame-src 'self'; object-src 'none';">
     <title>Tenebrae</title>
     <!-- load CSS -->
     <link rel="preload" href="img/welcome-1.png" as="image">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300" as="style">
-    <link rel="icon" href="https://www.tenebrae.ro/img/welcome-1.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" as="style">
+    <link rel="icon" href="/img/welcome-1.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
-
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
-    
 </head>
 
 <body>
-    <div id="tm-bg"></div>
+    <div id="tm-bg" role="presentation"></div>
     <div id="tm-wrap">
-        <div class="tm-main-content">
+        <main class="tm-main-content">
             <div class="container tm-site-header-container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
                         <div class="tm-site-header">
                             <h1 class="mb-4">Tenebrae</h1>
-                            <img src="img/underline.png" class="img-fluid mb-4">
+                            <img src="img/underline.png" class="img-fluid mb-4" alt="Decorative underline">
                             <p>Ideas, concepts, and projects in the field of applied artificial intelligence</p>        
                         </div>                        
                     </div>
@@ -49,25 +47,25 @@
                             <div class="grid">
                                 <div class="grid__item" id="home-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="About me section">
+                                            <i class="fas fa-users fa-3x tm-nav-icon" aria-hidden="true"></i>
                                             <span class="tm-nav-text">About me</span>
                                             <div class="product__bg"></div>        
                                         </div>                                    
                                         <div class="product__description">
-                                                    <h2 class="tm-page-title">Welcome to Tenebrae</h2>
-                                                    <p>My digital corner, where cybersecurity meets the cutting age of machine learning and artificial intelligence.</p>
-                                                    <p>I’m a cybersecurity expert and AI enthusiast on a mission to unlock the potential of intelligent technologies.</p>
-                                                    <p>With a foundation forged in digital forensics expertise and fortified by multiple certifications in Java and Python, I navigate the complexities of cybersecurity incident response and the Elastic Stack with finesse. </p>
-                                                    <p>My passion for this ever-evolving landscape propels me forward, driving me to continually expand my expertise and conquer new frontiers.</p>
+                                            <h2 class="tm-page-title">Welcome to Tenebrae</h2>
+                                            <p>My digital corner, where cybersecurity meets the cutting edge of machine learning and artificial intelligence.</p>
+                                            <p>I'm a cybersecurity expert and AI enthusiast on a mission to unlock the potential of intelligent technologies.</p>
+                                            <p>With a foundation forged in digital forensics expertise and fortified by multiple certifications in Java and Python, I navigate the complexities of cybersecurity incident response and the Elastic Stack with finesse.</p>
+                                            <p>My passion for this ever-evolving landscape propels me forward, driving me to continually expand my expertise and conquer new frontiers.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="grid__item" id="team-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-asterisk fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Tools section">
+                                            <i class="fas fa-asterisk fa-3x tm-nav-icon" aria-hidden="true"></i>
                                             <span class="tm-nav-text">Tools</span>
                                             <div class="product__bg"></div>            
                                         </div>                                     
@@ -80,7 +78,7 @@
                                                 </div>
                                                 <div class="row tm-reverse-sm">
                                                     <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">More tools and valuable materials will be added to this page. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>
+                                                        <p class="mb-4">More tools and valuable materials will be added to this page. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" rel="noopener noreferrer">More</a></p>
                                                     </div>                                                
                                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
                                                         <img src="img/lumiere_logo.png" alt="Lumiere Cyber Data Miner Logo" class="img-fluid">
@@ -92,8 +90,8 @@
                                 </div>
                                 <div class="grid__item">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-folder-open fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Projects section">
+                                            <i class="fas fa-folder-open fa-3x tm-nav-icon" aria-hidden="true"></i>
                                             <span class="tm-nav-text">Projects</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                                 
@@ -113,20 +111,20 @@
                                                     <div class="col-12">
                                                         <div class="p-sm-4 p-2 tm-img-container">
                                                             <div class="tm-img-slider" id="tmImgSlider">
-                                                                <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link"><img src="img/lumiere.gif" alt="Lumiere" class="img-fluid tm-slider-img"></a>
-                                                                <p>Try <strong>Lumiere</strong> on OpenAI Store Lumiere is a Cyber Data Miner specialized in preparing datasets for machine learning (ML) and deep learning (DL) applications. Their expertise encompasses data cleaning, preprocessing, feature extraction, and handling data formatting challenges to ensure datasets are suitable for ML/DL use. Lumiere provides academically professional and detailed responses, akin to academic or professional publications, with a focus on delivering precise information tailored for users with a solid understanding of data science and ML principles. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>                                                                
-                                                                <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link"><img src="img/CO5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img"></a>
-                                                                <p>Explore <strong>CO5 Datasets</strong> on GitHub, a comprehensive collection of machine learning datasets curated to fuel innovative projects and research. This repository is a treasure trove for data scientists and researchers looking for diverse and high-quality datasets to power machine learning models and analytics. Whether you're working on AI, deep learning, or predictive analytics, find the data you need to push the boundaries of technology. <a href="https://github.com/ctinnil/CY0P5_ML_Datasets">More</a></p>
-                                                                <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link"><img src="img/PP_Trefoil.gif" alt="PP_Trefoil" class="img-fluid tm-slider-img"></a>
-                                                                <p>Check out <strong>PP_Trefoil</strong> on GitHub, a groundbreaking software designed for intricate pattern generation and design. With its unique algorithms, PP_Trefoil enables users to create complex, beautiful patterns effortlessly. Ideal for designers, artists, and creatives looking for innovative design tools. <a href="https://github.com/ctinnil/PP_Trefoil">More</a></p>
-                                                                <a href="https://github.com/ctinnil/Eclair" class="tm-slider-img-link"><img src="img/eclair.gif" alt="Eclair" class="img-fluid tm-slider-img"></a>
-                                                                <p>Discover <strong>Eclair</strong> on GitHub, the lightning-fast software solution that boosts efficiency and performance. Eclair is engineered to streamline operations, offering a seamless user experience. Ideal for businesses and developers needing speed and reliability in their software toolkit. <a href="https://github.com/ctinnil/Eclair">More</a></p>
-                                                                <a href="https://github.com/ctinnil/FruitSalad" class="tm-slider-img-link"><img src="img/fs.gif" alt="FruitSalad" class="img-fluid tm-slider-img"></a>
-                                                                <p>Visit <strong>FruitSalad</strong> on GitHub for a refreshing approach to data visualization and analysis. This versatile tool combines ease of use with powerful functionality, making complex data more accessible and understandable. A must-have for researchers, analysts, and anyone in need of intuitive data insights. <a href="https://github.com/ctinnil/FruitSalad">More</a></p>
-                                                                <a href="https://github.com/ctinnil/QIR" class="tm-slider-img-link"><img src="img/qir.gif" alt="QIR" class="img-fluid tm-slider-img"></a>
-                                                                <p>Find <strong>QIR</strong> on GitHub, the quantum-inspired software that's setting new standards in computational efficiency and problem-solving. QIR offers a unique platform for exploring quantum algorithms in a classical environment, making it perfect for researchers, scientists, and developers interested in quantum computing. <a href="https://github.com/ctinnil/QIR">More</a></p>
-                                                                <a href="https://github.com/ctinnil/badseed" class="tm-slider-img-link"><img src="img/bs.gif" alt="BadSeed" class="img-fluid tm-slider-img"></a>
-                                                                <p>Explore <strong>BadSeed</strong> on GitHub - a cutting-edge software tool designed to enhance data security and integrity. This robust solution offers innovative features for protecting sensitive information, ensuring your data remains safe and uncompromised. Perfect for developers and IT professionals seeking advanced security measures. <a href="https://github.com/ctinnil/badseed">More</a></p>
+                                                                <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/lumiere.gif" alt="Lumiere" class="img-fluid tm-slider-img"></a>
+                                                                <p>Try <strong>Lumiere</strong> on OpenAI Store. Lumiere is a Cyber Data Miner specialized in preparing datasets for machine learning (ML) and deep learning (DL) applications. Their expertise encompasses data cleaning, preprocessing, feature extraction, and handling data formatting challenges to ensure datasets are suitable for ML/DL use. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" rel="noopener noreferrer">More</a></p>                                                                
+                                                                <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/CO5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img"></a>
+                                                                <p>Explore <strong>CO5 Datasets</strong> on GitHub, a comprehensive collection of machine learning datasets curated to fuel innovative projects and research. This repository is a treasure trove for data scientists and researchers looking for diverse and high-quality datasets to power machine learning models and analytics. <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" rel="noopener noreferrer">More</a></p>
+                                                                <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/PP_Trefoil.gif" alt="PP_Trefoil" class="img-fluid tm-slider-img"></a>
+                                                                <p>Check out <strong>PP_Trefoil</strong> on GitHub, a groundbreaking software designed for intricate pattern generation and design. With its unique algorithms, PP_Trefoil enables users to create complex, beautiful patterns effortlessly. <a href="https://github.com/ctinnil/PP_Trefoil" rel="noopener noreferrer">More</a></p>
+                                                                <a href="https://github.com/ctinnil/Eclair" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/eclair.gif" alt="Eclair" class="img-fluid tm-slider-img"></a>
+                                                                <p>Discover <strong>Eclair</strong> on GitHub, the lightning-fast software solution that boosts efficiency and performance. Eclair is engineered to streamline operations, offering a seamless user experience. <a href="https://github.com/ctinnil/Eclair" rel="noopener noreferrer">More</a></p>
+                                                                <a href="https://github.com/ctinnil/FruitSalad" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/fs.gif" alt="FruitSalad" class="img-fluid tm-slider-img"></a>
+                                                                <p>Visit <strong>FruitSalad</strong> on GitHub for a refreshing approach to data visualization and analysis. This versatile tool combines ease of use with powerful functionality, making complex data more accessible and understandable. <a href="https://github.com/ctinnil/FruitSalad" rel="noopener noreferrer">More</a></p>
+                                                                <a href="https://github.com/ctinnil/QIR" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/qir.gif" alt="QIR" class="img-fluid tm-slider-img"></a>
+                                                                <p>Find <strong>QIR</strong> on GitHub, the quantum-inspired software that's setting new standards in computational efficiency and problem-solving. QIR offers a unique platform for exploring quantum algorithms in a classical environment. <a href="https://github.com/ctinnil/QIR" rel="noopener noreferrer">More</a></p>
+                                                                <a href="https://github.com/ctinnil/badseed" class="tm-slider-img-link" rel="noopener noreferrer"><img src="img/bs.gif" alt="BadSeed" class="img-fluid tm-slider-img"></a>
+                                                                <p>Explore <strong>BadSeed</strong> on GitHub - a cutting-edge software tool designed to enhance data security and integrity. This robust solution offers innovative features for protecting sensitive information, ensuring your data remains safe and uncompromised. <a href="https://github.com/ctinnil/badseed" rel="noopener noreferrer">More</a></p>
                                                             </div>
                                                         </div>  
                                                     </div>
@@ -137,8 +135,8 @@
                                 </div>
                                 <div class="grid__item">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-comments fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Contact section">
+                                            <i class="fas fa-comments fa-3x tm-nav-icon" aria-hidden="true"></i>
                                             <span class="tm-nav-text">Contact</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                              
@@ -157,11 +155,11 @@
                                                 <div class="row mb-4">
                                                     <div class="col-12">
                                                         <div class="container">
-                                                            <p align="center">
-                                                                <a href="https://twitter.com/ctinnil"><img src="https://img.shields.io/twitter/follow/ctinnil?style=social" alt="Twitter"></a>
-                                                                <a href="https://github.com/ctinnil"><img src="https://img.shields.io/github/followers/ctinnil?style=social" alt="Github"></a>
-                                                                <a href="https://www.instagram.com/accounts/login/?next=%2Fctinnil%2F&source=follow"><img src="https://img.shields.io/badge/Instagram-white?style=flat&logo=instagram&logoColor=black" alt="Instagram"></a>
-                                                                <a href="mailto:office@tenebrae.ro?subject=Mail from Fan"><img src="https://img.shields.io/badge/Send%20me%20an%20email-white?style=flat&logo=mailboxdotorg&logoColor=black" alt="Email"></a>
+                                                            <p class="text-center">
+                                                                <a href="https://twitter.com/ctinnil" rel="noopener noreferrer" aria-label="Twitter Profile"><img src="https://img.shields.io/twitter/follow/ctinnil?style=social" alt="Twitter"></a>
+                                                                <a href="https://github.com/ctinnil" rel="noopener noreferrer" aria-label="GitHub Profile"><img src="https://img.shields.io/github/followers/ctinnil?style=social" alt="Github"></a>
+                                                                <a href="https://www.instagram.com/ctinnil/" rel="noopener noreferrer" aria-label="Instagram Profile"><img src="https://img.shields.io/badge/Instagram-white?style=flat&logo=instagram&logoColor=black" alt="Instagram"></a>
+                                                                <a href="mailto:office@tenebrae.ro?subject=Mail from Website" aria-label="Email Contact"><img src="https://img.shields.io/badge/Send%20me%20an%20email-white?style=flat&logo=mailboxdotorg&logoColor=black" alt="Email"></a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -177,46 +175,74 @@
             </div>
             <footer>
                 <p class="small tm-copyright-text">
-                    <span>&copy; <script>document.write(new Date().getFullYear());</script> Tenebrae. All rights reserved.</span>
+                    <span>&copy; <span id="currentYear"></span> Tenebrae. All rights reserved.</span>
                 </p>
             </footer>
-        </div> <!-- .tm-main-content -->  
+        </main>
     </div>
-    <!-- load JS -->
-     <!-- <script src="js/jquery-3.6.0.min.js"></script>         <!-- https://jquery.com/ -->    
-    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
-    <script src="js/main.js" defer></script>  
+    
+    <!-- Modern JavaScript loading -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/main.js" defer></script>
+    
     <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Feature detection for CSS variables
+        (function() {
+            if (window.CSS && window.CSS.supports && window.CSS.supports('--a', '0')) {
+                document.documentElement.classList.add('js');
+            } else {
+                const message = 'This website works best with modern browsers that support CSS variables like Chrome, Firefox, Safari, or Edge.';
+                const banner = document.createElement('div');
+                banner.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#ffea8a;color:#000;padding:12px;text-align:center;z-index:9999;font-weight:bold;';
+                banner.textContent = message;
+                document.body.prepend(banner);
+            }
+        })();
+        
+        // Footer positioning
         function setupFooter() {
-            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
-            var main = $('.tm-main-content');
-            if($(window).height() < pageHeight) {
-                main.addClass('tm-footer-relative');
-            }
-            else {
-                main.removeClass('tm-footer-relative');   
+            const pageHeight = document.querySelector('.tm-site-header-container').offsetHeight + 
+                               document.querySelector('footer').offsetHeight + 100;
+            const main = document.querySelector('.tm-main-content');
+            
+            if (window.innerHeight < pageHeight) {
+                main.classList.add('tm-footer-relative');
+            } else {
+                main.classList.remove('tm-footer-relative');   
             }
         }
-        $(function(){
+        
+        // Initialize after DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
             setupFooter();
-            $(window).resize(function(){
-                setupFooter();
-            });
-            $('.tm-current-year').text(new Date().getFullYear());        
+            window.addEventListener('resize', setupFooter);
+            
+            // Initialize image slider with accessible controls
+            if (document.getElementById('tmImgSlider')) {
+                $('#tmImgSlider').slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: window.innerWidth > 767 ? 4 : 2,
+                    slidesToScroll: window.innerWidth > 767 ? 3 : 1,
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ],
+                    accessibility: true,
+                    adaptiveHeight: true
+                });
+            }
         });
-    </script>
-    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
-    <script>
-        window.embeddedChatbotConfig = {
-        chatbotId: "OXXFUEgAa3ZlPzKRWp75u",
-        domain: "www.chatbase.co"
-        }
-        </script>
-        <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="OXXFUEgAa3ZlPzKRWp75u"
-        domain="www.chatbase.co"
-        defer>
     </script>
 </body>
 </html>
