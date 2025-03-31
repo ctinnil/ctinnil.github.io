@@ -19,14 +19,15 @@
     <title>Tenebrae</title>
     <!-- load CSS -->
     <link rel="preload" href="img/welcome-1.png" as="image">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" as="style">
     <link rel="icon" href="/img/welcome-1.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/modern-menu.css">
 </head>
 
 <body>
@@ -48,7 +49,9 @@
                                 <div class="grid__item" id="home-link">
                                     <div class="product">
                                         <div class="tm-nav-link" tabindex="0" role="button" aria-label="About me section">
-                                            <i class="fas fa-users fa-3x tm-nav-icon" aria-hidden="true"></i>
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-users fa-3x" aria-hidden="true"></i>
+                                            </div>
                                             <span class="tm-nav-text">About me</span>
                                             <div class="product__bg"></div>        
                                         </div>                                    
@@ -65,7 +68,9 @@
                                 <div class="grid__item" id="team-link">
                                     <div class="product">
                                         <div class="tm-nav-link" tabindex="0" role="button" aria-label="Tools section">
-                                            <i class="fas fa-asterisk fa-3x tm-nav-icon" aria-hidden="true"></i>
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-tools fa-3x" aria-hidden="true"></i>
+                                            </div>
                                             <span class="tm-nav-text">Tools</span>
                                             <div class="product__bg"></div>            
                                         </div>                                     
@@ -88,10 +93,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__item">
+                                <div class="grid__item" id="projects-link">
                                     <div class="product">
                                         <div class="tm-nav-link" tabindex="0" role="button" aria-label="Projects section">
-                                            <i class="fas fa-folder-open fa-3x tm-nav-icon" aria-hidden="true"></i>
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-project-diagram fa-3x" aria-hidden="true"></i>
+                                            </div>
                                             <span class="tm-nav-text">Projects</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                                 
@@ -133,10 +140,12 @@
                                         </div>       
                                     </div>
                                 </div>
-                                <div class="grid__item">
+                                <div class="grid__item" id="contact-link">
                                     <div class="product">
                                         <div class="tm-nav-link" tabindex="0" role="button" aria-label="Contact section">
-                                            <i class="fas fa-comments fa-3x tm-nav-icon" aria-hidden="true"></i>
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-envelope fa-3x" aria-hidden="true"></i>
+                                            </div>
                                             <span class="tm-nav-text">Contact</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                              
@@ -221,6 +230,41 @@
         document.addEventListener('DOMContentLoaded', function() {
             setupFooter();
             window.addEventListener('resize', setupFooter);
+            
+            // Add modern menu interactions
+            const menuItems = document.querySelectorAll('.tm-nav-link');
+            
+            menuItems.forEach(item => {
+                // Add hover effect with perspective
+                item.addEventListener('mousemove', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    const maxDegree = 10;
+                    
+                    // Calculate rotation based on mouse position
+                    const xDeg = (y / (rect.height / 2)) * maxDegree;
+                    const yDeg = (x / (rect.width / 2)) * -maxDegree;
+                    
+                    this.style.transform = `perspective(1000px) rotateX(${xDeg}deg) rotateY(${yDeg}deg) translateY(-5px)`;
+                });
+                
+                // Reset transform on mouse leave
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+                });
+                
+                // Add focus effect for accessibility
+                item.addEventListener('focus', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.boxShadow = '0 0 0 3px rgba(66, 153, 225, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2)';
+                });
+                
+                item.addEventListener('blur', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '';
+                });
+            });
             
             // Initialize image slider with accessible controls
             if (document.getElementById('tmImgSlider')) {
