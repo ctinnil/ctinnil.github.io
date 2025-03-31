@@ -1,7 +1,7 @@
 # robots.txt for Tenebrae.ro
-# Prevent malicious crawlers and bots while allowing legitimate search engines
+# Allow legitimate search engines while blocking malicious crawlers and bots
 
-# Allow all search engines to index the website
+# Set global rules for mainstream search engines
 User-agent: *
 Disallow: /admin/
 Disallow: /private/
@@ -10,9 +10,20 @@ Disallow: /search/
 Disallow: /checkout/
 Disallow: /cgi-bin/
 Allow: /
-Sitemap: https://tenebrae.ro/sitemap.xml
 
-# Block known malicious user agents
+# Specify sitemap location for better indexing
+Sitemap: https://www.tenebrae.ro/sitemap.xml
+
+# Rules for specific legitimate crawlers
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Block known malicious user agents and vulnerability scanners
 User-agent: sqlmap
 Disallow: /
 
@@ -40,8 +51,26 @@ Disallow: /
 User-agent: python-requests
 Disallow: /
 
-# Optional: Specify crawl delays or block query parameters if needed
-# Crawl-delay: 10
-# Disallow: /*?filter=
+User-agent: zgrab
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Prevent indexing of fragment identifiers
+Disallow: /*#
+
+# Prevent archive.org from archiving the site if desired
+# User-agent: ia_archiver
+# Disallow: /
 
 # End of robots.txt
