@@ -18,9 +18,9 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com https://www.chatbase.co 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://img.shields.io data:; connect-src 'self' https://www.chatbase.co; frame-src 'self'; object-src 'none';">
     <title>Tenebrae</title>
     <!-- load CSS -->
-    <link rel="preload" href="img/modern/png/welcome-1.png" as="image">
+    <link rel="preload" href="img/welcome-1.png" as="image">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" as="style">
-    <link rel="icon" href="/img/modern/png/welcome-1.png" type="image/png">
+    <link rel="icon" href="/img/welcome-1.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="css/tooplate-style.css">
     <link rel="stylesheet" href="css/modern-menu.css">
     <link rel="stylesheet" href="css/modern-slider.css">
-    <link rel="stylesheet" href="css/tailwind-theme.css">
 </head>
 
 <body>
@@ -41,7 +40,7 @@
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
                         <div class="tm-site-header">
                             <h1 class="mb-4">Tenebrae</h1>
-                            <img src="img/modern/png/underline.png" class="img-fluid mb-4" alt="Decorative underline">
+                            <img src="img/underline.png" class="img-fluid mb-4" alt="Decorative underline">
                             <p>Ideas, concepts, and projects in the field of applied artificial intelligence</p>        
                         </div>                        
                     </div>
@@ -50,9 +49,9 @@
                             <div class="grid">
                                 <div class="grid__item" id="home-link">
                                     <div class="product">
-                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="About me section">
-                                            <div class="tm-nav-icon icon-circle">
-                                                <img src="img/modern/png/about-me.png" alt="About Me" width="46" height="46" aria-hidden="true">
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="About me section">
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-users fa-3x" aria-hidden="true"></i>
                                             </div>
                                             <span class="tm-nav-text">About me</span>
                                             <div class="product__bg"></div>        
@@ -69,9 +68,9 @@
 
                                 <div class="grid__item" id="team-link">
                                     <div class="product">
-                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Tools section">
-                                            <div class="tm-nav-icon icon-circle">
-                                                <img src="img/modern/png/tools.png" alt="Tools" width="46" height="46" aria-hidden="true">
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Tools section">
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-tools fa-3x" aria-hidden="true"></i>
                                             </div>
                                             <span class="tm-nav-text">Tools</span>
                                             <div class="product__bg"></div>            
@@ -97,9 +96,9 @@
                                 </div>
                                 <div class="grid__item" id="projects-link">
                                     <div class="product">
-                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Projects section">
-                                            <div class="tm-nav-icon icon-circle">
-                                                <img src="img/modern/png/projects.png" alt="Projects" width="46" height="46" aria-hidden="true">
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Projects section">
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-project-diagram fa-3x" aria-hidden="true"></i>
                                             </div>
                                             <span class="tm-nav-text">Projects</span>
                                             <div class="product__bg"></div>             
@@ -119,11 +118,11 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="p-sm-4 p-2 tm-img-container">
-                                                            <div class="tm-img-slider single-project-slider" id="tmImgSlider">
+                                                            <div class="tm-img-slider" id="tmImgSlider">
                                                                 <div class="tm-project-card">
                                                                     <h3>Lumiere</h3>
                                                                     <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/lumiere.png" alt="Lumiere" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/lumiere.svg" alt="Lumiere" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">AI Agent</span>
@@ -136,7 +135,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>CO5 Datasets</h3>
                                                                     <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/co5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/co5.svg" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Dataset Collection</span>
@@ -149,7 +148,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>PP_Trefoil</h3>
                                                                     <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/trefoil.png" alt="PP_Trefoil" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/trefoil.svg" alt="PP_Trefoil" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Pattern Generation</span>
@@ -162,7 +161,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>Eclair</h3>
                                                                     <a href="https://github.com/ctinnil/Eclair" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/eclair.png" alt="Eclair" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/eclair.svg" alt="Eclair" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Performance</span>
@@ -175,7 +174,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>FruitSalad</h3>
                                                                     <a href="https://github.com/ctinnil/FruitSalad" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/fruitsalad.png" alt="FruitSalad" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/fruitsalad.svg" alt="FruitSalad" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Data Visualization</span>
@@ -188,7 +187,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>QIR</h3>
                                                                     <a href="https://github.com/ctinnil/QIR" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/qir.png" alt="QIR" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/qir.svg" alt="QIR" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Quantum Computing</span>
@@ -201,7 +200,7 @@
                                                                 <div class="tm-project-card">
                                                                     <h3>BadSeed</h3>
                                                                     <a href="https://github.com/ctinnil/badseed" class="tm-slider-img-link" rel="noopener noreferrer">
-                                                                        <img src="img/modern/png/badseed.png" alt="BadSeed" class="img-fluid tm-slider-img">
+                                                                        <img src="img/modern/badseed.svg" alt="BadSeed" class="img-fluid tm-slider-img">
                                                                     </a>
                                                                     <div class="project-tags">
                                                                         <span class="project-tag">Cybersecurity</span>
@@ -220,9 +219,9 @@
                                 </div>
                                 <div class="grid__item" id="contact-link">
                                     <div class="product">
-                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Contact section">
-                                            <div class="tm-nav-icon icon-circle">
-                                                <img src="img/modern/png/contact.png" alt="Contact" width="46" height="46" aria-hidden="true">
+                                        <div class="tm-nav-link" tabindex="0" role="button" aria-label="Contact section">
+                                            <div class="tm-nav-icon">
+                                                <i class="fas fa-envelope fa-3x" aria-hidden="true"></i>
                                             </div>
                                             <span class="tm-nav-text">Contact</span>
                                             <div class="product__bg"></div>             
@@ -354,32 +353,31 @@
             
             // Initialize image slider with accessible controls
             if (document.getElementById('tmImgSlider')) {
-                // Configure slider settings - EXACTLY one project per slide, guaranteed
+                // Configure slider settings based on device
                 const sliderSettings = {
                     dots: true,
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     accessibility: true,
-                    adaptiveHeight: false,
-                    autoplay: false,
-                    cssEase: 'ease-in-out',
-                    speed: 500,
-                    fade: true,
-                    touchThreshold: 10,
-                    swipeToSlide: true,
-                    centerMode: false,
-                    centerPadding: '0',
-                    prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><img src="img/modern/png/arrow-left.png" alt="Previous" /></button>',
-                    nextArrow: '<button type="button" class="slick-next" aria-label="Next"><img src="img/modern/png/arrow-right.png" alt="Next" /></button>',
+                    adaptiveHeight: true,
+                    autoplay: !isMobile(), // Disable autoplay on mobile to improve performance
+                    autoplaySpeed: 5000,
+                    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+                    speed: isMobile() ? 500 : 800, // Faster transitions on mobile
+                    fade: !isMobile(), // Disable fade on mobile for better performance
+                    lazyLoad: 'ondemand', // Lazy load images for better performance
+                    touchThreshold: 10, // Make swipe more responsive
+                    swipeToSlide: true, // Allow swipe to next/previous slide
+                    prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>',
+                    nextArrow: '<button type="button" class="slick-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>',
                     responsive: [
                         {
                             breakpoint: 767,
                             settings: {
                                 arrows: true,
                                 dots: true,
-                                adaptiveHeight: true,
-                                fade: true // Keep fade effect on mobile
+                                adaptiveHeight: true
                             }
                         }
                     ]
@@ -387,24 +385,9 @@
                 
                 $('#tmImgSlider').slick(sliderSettings);
                 
-                // Force single project view
-                $('#tmImgSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-                    // Hide all slides before showing the next one
-                    $(this).find('.slick-slide').css('opacity', 0);
-                    
-                    // Cleanup any stuck slides
-                    setTimeout(function() {
-                        $('.slick-slide:not(.slick-current)').css({
-                            'display': 'none',
-                            'visibility': 'hidden'
-                        });
-                    }, 50);
-                });
-                
                 // Add animation delay to each slide based on its index
                 $('#tmImgSlider .slick-slide').each(function(index) {
                     $(this).css('--slide-index', index);
-                    $(this).attr('data-project-index', index);
                 });
                 
                 // Ensure proper mobile rendering
@@ -430,7 +413,7 @@
                 if (isMobile()) {
                     const swipeHint = document.createElement('div');
                     swipeHint.className = 'swipe-hint';
-                    swipeHint.innerHTML = '<img src="img/modern/png/swipe.png" alt="Swipe" width="20" height="20" style="display: inline-block; margin-right: 5px;"> Swipe to navigate projects';
+                    swipeHint.innerHTML = '<i class="fas fa-hand-point-up"></i> Swipe to navigate projects';
                     document.querySelector('.tm-img-container').appendChild(swipeHint);
                     
                     // Hide hint after a few seconds

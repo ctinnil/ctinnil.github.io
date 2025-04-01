@@ -1,37 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" rx="40" fill="url(#paint0_linear)"/>
+  <g filter="url(#filter0_d)">
+    <path d="M250 125V375" stroke="url(#paint1_linear)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M125 250H375" stroke="url(#paint2_linear)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M170.75 170.75L329.25 329.25" stroke="url(#paint3_linear)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M170.75 329.25L329.25 170.75" stroke="url(#paint4_linear)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#filter1_d)">
+    <path d="M250 125C220.67 125 192.75 136.87 172.75 156.87C152.75 176.87 141 204.83 141 234C141 263.17 152.87 291.13 172.87 311.13C192.87 331.13 220.83 342.88 250 342.88C279.17 342.88 307.13 331.01 327.13 311.01C347.13 291.01 358.88 263.05 358.88 233.88C358.88 204.71 347.01 176.75 327.01 156.75C307.01 136.75 279.17 125 250 125Z" stroke="url(#paint5_linear)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g filter="url(#filter2_d)">
+    <circle cx="250" cy="250" r="60" stroke="url(#paint6_linear)" stroke-width="8"/>
+  </g>
+  <g filter="url(#filter3_d)">
+    <path d="M230 220C230 209.23 238.73 200.5 249.5 200.5C260.27 200.5 269 209.23 269 220C269 230.77 260.27 239.5 249.5 239.5" stroke="url(#paint7_linear)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M230 280C230 269.23 238.73 260.5 249.5 260.5C260.27 260.5 269 269.23 269 280C269 290.77 260.27 299.5 249.5 299.5" stroke="url(#paint8_linear)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M230 250H270" stroke="url(#paint9_linear)" stroke-width="8" stroke-linecap="round"/>
+  </g>
   <defs>
-    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#007BFF"/>
-      <stop offset="1" stop-color="#5AC8FA"/>
-    </linearGradient>
-    <filter id="shadow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d" x="118" y="122" width="264" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
       <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="8"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.827 0 0 0 0 0.584 0 0 0 0.25 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
+    <filter id="filter1_d" x="133" y="121" width="233.875" height="233.875" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.827 0 0 0 0 0.584 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="182" y="186" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.827 0 0 0 0 0.584 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter3_d" x="222" y="196.5" width="56" height="115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.827 0 0 0 0 0.584 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101820"/>
+      <stop offset="1" stop-color="#0A0D13"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="250" y1="125" x2="251" y2="375" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C2A8"/>
+      <stop offset="1" stop-color="#008170"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="125" y1="250" x2="375" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D3B5"/>
+      <stop offset="1" stop-color="#00A186"/>
+    </linearGradient>
+    <linearGradient id="paint3_linear" x1="170.75" y1="170.75" x2="329.25" y2="329.25" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C2A8"/>
+      <stop offset="1" stop-color="#008170"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear" x1="170.75" y1="329.25" x2="329.25" y2="170.75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D3B5"/>
+      <stop offset="1" stop-color="#00A186"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear" x1="141" y1="125" x2="358.88" y2="342.88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C2A8"/>
+      <stop offset="1" stop-color="#008170"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear" x1="190" y1="190" x2="310" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D3B5"/>
+      <stop offset="1" stop-color="#00A186"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear" x1="230" y1="200.5" x2="269" y2="239.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E0C2"/>
+      <stop offset="1" stop-color="#00B295"/>
+    </linearGradient>
+    <linearGradient id="paint8_linear" x1="230" y1="260.5" x2="269" y2="299.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E0C2"/>
+      <stop offset="1" stop-color="#00B295"/>
+    </linearGradient>
+    <linearGradient id="paint9_linear" x1="230" y1="250" x2="270" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E0C2"/>
+      <stop offset="1" stop-color="#00B295"/>
+    </linearGradient>
   </defs>
-  
-  <!-- Background -->
-  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#shadow)"/>
-  
-  <!-- Trefoil Knot - resembling the original trefoil concept -->
-  <path d="M250 130C235 130 220 135 210 145C200 155 195 170 195 185C195 190 196 195 197 200C198 205 200 209 203 213C183 223 170 243 170 265C170 285 181 303 197 315C194 320 192 325 190 330C188 335 187 340 187 345C187 360 194 375 205 385C216 395 230 400 245 400C260 400 274 395 285 385C296 375 303 360 303 345C303 340 302 335 300 330C298 325 296 320 293 315C309 303 320 285 320 265C320 243 307 223 287 213C290 209 292 205 293 200C294 195 295 190 295 185C295 170 290 155 280 145C270 135 264 130 250 130Z" stroke="white" stroke-width="8" fill="none"/>
-  
-  <!-- Trefoil Overlay Design - to enhance the original look -->
-  <path d="M250 140C238 140 226 144 218 152C210 160 206 172 206 185C206 189 207 193 208 197C209 201 210 204 213 207C197 215 186 231 186 250C186 266 195 281 207 290C205 294 203 298 201 302C199 306 198 310 198 315C198 327 204 339 213 347C222 355 233 359 245 359C257 359 268 355 277 347C286 339 292 327 292 315C292 310 291 306 289 302C287 298 285 294 283 290C295 281 304 266 304 250C304 231 293 215 277 207C280 204 281 201 282 197C283 193 284 189 284 185C284 172 280 160 272 152C264 144 260 140 250 140Z" stroke="url(#paint0_linear)" stroke-width="5" fill="none"/>
-  
-  <!-- Dots at the intersections -->
-  <circle cx="206" cy="185" r="10" fill="#5AC8FA"/>
-  <circle cx="250" cy="250" r="12" fill="white"/>
-  <circle cx="198" cy="315" r="10" fill="#5AC8FA"/>
-  <circle cx="302" cy="315" r="10" fill="#007BFF"/>
-  <circle cx="294" cy="185" r="10" fill="#007BFF"/>
-  
-  <!-- Central circle connecting all parts -->
-  <circle cx="250" cy="250" r="25" fill="#222222" stroke="white" stroke-width="4"/>
 </svg>

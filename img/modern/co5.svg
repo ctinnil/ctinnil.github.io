@@ -1,64 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" rx="40" fill="url(#paint0_linear)"/>
+  <g filter="url(#filter0_d)">
+    <path d="M250 125C319.036 125 375 180.964 375 250C375 319.036 319.036 375 250 375C180.964 375 125 319.036 125 250C125 180.964 180.964 125 250 125Z" stroke="url(#paint1_linear)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M250 150C305.228 150 350 194.772 350 250C350 305.228 305.228 350 250 350C194.772 350 150 305.228 150 250C150 194.772 194.772 150 250 150Z" stroke="url(#paint2_linear)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 12"/>
+  </g>
+  <g filter="url(#filter1_d)">
+    <path d="M175 220L210 255L185 280" stroke="url(#paint3_linear)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M220 270L250 300L280 270" stroke="url(#paint4_linear)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M325 220L290 255L315 280" stroke="url(#paint5_linear)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g filter="url(#filter2_d)">
+    <circle cx="225" cy="200" r="15" fill="url(#paint6_radial)"/>
+    <circle cx="275" cy="200" r="15" fill="url(#paint7_radial)"/>
+  </g>
   <defs>
-    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#007BFF"/>
-      <stop offset="1" stop-color="#5AC8FA"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear" x1="150" y1="150" x2="350" y2="350" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#5AC8FA"/>
-      <stop offset="1" stop-color="#AAAAAA"/>
-    </linearGradient>
-    <filter id="shadow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d" x="115" y="119" width="270" height="270" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
       <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="8"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feGaussianBlur stdDeviation="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.792 0 0 0 0 0.188 0 0 0 0 0.655 0 0 0 0.5 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
+    <filter id="filter1_d" x="167" y="216" width="166" height="96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.792 0 0 0 0 0.188 0 0 0 0 0.655 0 0 0 0.4 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="filter2_d" x="204" y="183" width="92" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.792 0 0 0 0 0.188 0 0 0 0 0.655 0 0 0 0.4 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E0259"/>
+      <stop offset="1" stop-color="#240046"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="125" y1="125" x2="375" y2="375" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F72585"/>
+      <stop offset="1" stop-color="#7209B7"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="150" y1="150" x2="350" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B5179E"/>
+      <stop offset="1" stop-color="#7209B7"/>
+    </linearGradient>
+    <linearGradient id="paint3_linear" x1="175" y1="220" x2="210" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F72585"/>
+      <stop offset="1" stop-color="#B5179E"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear" x1="220" y1="270" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7209B7"/>
+      <stop offset="1" stop-color="#560BAD"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear" x1="325" y1="220" x2="290" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F72585"/>
+      <stop offset="1" stop-color="#B5179E"/>
+    </linearGradient>
+    <radialGradient id="paint6_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(225 200) rotate(90) scale(15)">
+      <stop stop-color="#F72585"/>
+      <stop offset="1" stop-color="#7209B7"/>
+    </radialGradient>
+    <radialGradient id="paint7_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(275 200) rotate(90) scale(15)">
+      <stop stop-color="#F72585"/>
+      <stop offset="1" stop-color="#7209B7"/>
+    </radialGradient>
   </defs>
-  
-  <!-- Background -->
-  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#shadow)"/>
-  
-  <!-- CO5 Text Design -->
-  <g>
-    <!-- C -->
-    <path d="M130 180C130 166.8 134.1 155.7 142.3 146.6C150.5 137.5 161.4 133 175 133C189 133 200.1 137.5 208.3 146.6C216.5 155.7 220.7 167.8 220.7 183L200 183C200 172.6 197.5 164.4 192.5 158.5C187.5 152.6 181.1 149.7 173.3 149.7C165.5 149.7 159.3 152.6 154.7 158.5C150.1 164.4 147.8 172.2 147.8 182C147.8 192.2 150.3 200.3 155.3 206.4C160.3 212.5 166.8 215.5 174.8 215.5C181.2 215.5 186.5 213.4 190.7 209.2C194.9 205 197.6 199.2 198.8 191.8L219.5 191.8C217.9 205 212.8 215.3 204.2 222.7C195.6 230.1 184.9 233.8 172.2 233.8C159.4 233.8 149 229.3 141 220.2C133 211.1 129 198.8 129 183.2L130 180Z" fill="white"/>
-    
-    <!-- O -->
-    <ellipse cx="250" cy="185" rx="40" ry="50" fill="none" stroke="url(#paint0_linear)" stroke-width="15"/>
-    
-    <!-- 5 -->
-    <path d="M330 133H390V150H350V175H390C392.2 175 394 176.8 394 179V223C394 226.3 391.3 229 388 229H330V213H374V190H330C327.8 190 326 188.2 326 186V136C326 134.3 327.3 133 329 133H330Z" fill="white"/>
-  </g>
-  
-  <!-- Data Structure Elements -->
-  <g stroke="url(#paint1_linear)" stroke-width="5" stroke-linecap="round">
-    <!-- Dataset Bars -->
-    <rect x="140" y="270" width="30" height="120" rx="5" fill="#222222"/>
-    <rect x="180" y="290" width="30" height="100" rx="5" fill="#222222"/>
-    <rect x="220" y="250" width="30" height="140" rx="5" fill="#222222"/>
-    <rect x="260" y="280" width="30" height="110" rx="5" fill="#222222"/>
-    <rect x="300" y="260" width="30" height="130" rx="5" fill="#222222"/>
-    <rect x="340" y="300" width="30" height="90" rx="5" fill="#222222"/>
-    
-    <!-- Connection Lines -->
-    <line x1="155" y1="270" x2="155" y2="250" opacity="0.7"/>
-    <line x1="195" y1="290" x2="195" y2="250" opacity="0.7"/>
-    <line x1="235" y1="250" x2="235" y2="240" opacity="0.7"/>
-    <line x1="275" y1="280" x2="275" y2="250" opacity="0.7"/>
-    <line x1="315" y1="260" x2="315" y2="250" opacity="0.7"/>
-    <line x1="355" y1="300" x2="355" y2="250" opacity="0.7"/>
-  </g>
-  
-  <!-- Dataset indicators -->
-  <circle cx="155" cy="240" r="6" fill="white"/>
-  <circle cx="195" cy="240" r="6" fill="white"/>
-  <circle cx="235" cy="230" r="6" fill="white"/>
-  <circle cx="275" cy="240" r="6" fill="white"/>
-  <circle cx="315" cy="240" r="6" fill="white"/>
-  <circle cx="355" cy="240" r="6" fill="white"/>
 </svg>
