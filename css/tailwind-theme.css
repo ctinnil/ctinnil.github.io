@@ -1,0 +1,290 @@
+/* Tailwind-inspired utility classes for Tenebrae.ro */
+
+:root {
+  /* Color palette */
+  --white: #ffffff;
+  --black: #000000;
+  --gray-900: #1a202c;
+  --gray-800: #2d3748;
+  --gray-700: #4a5568;
+  --gray-600: #718096;
+  --gray-500: #a0aec0;
+  --gray-400: #cbd5e0;
+  --gray-300: #e2e8f0;
+  --gray-200: #edf2f7;
+  --gray-100: #f7fafc;
+  --azure: #007bff; /* Azure blue */
+  --azure-light: #4d9fff; /* Lighter shade of azure */
+  --viking: #5AC8FA; /* Viking turquoise/teal */
+  --viking-light: #85d4fa; /* Lighter shade of viking */
+}
+
+/* Background utilities */
+.bg-gray-900 {
+  background-color: var(--gray-900);
+}
+
+.bg-gray-800 {
+  background-color: var(--gray-800);
+}
+
+.bg-azure {
+  background-color: var(--azure);
+}
+
+.bg-viking {
+  background-color: var(--viking);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-opacity-10 {
+  background-opacity: 0.1;
+}
+
+.bg-opacity-20 {
+  background-opacity: 0.2;
+}
+
+.bg-opacity-50 {
+  background-opacity: 0.5;
+}
+
+.bg-gradient-azure-viking {
+  background: linear-gradient(90deg, var(--azure), var(--viking));
+}
+
+.bg-gradient-viking-azure {
+  background: linear-gradient(90deg, var(--viking), var(--azure));
+}
+
+/* Text utilities */
+.text-white {
+  color: var(--white);
+}
+
+.text-gray-200 {
+  color: var(--gray-200);
+}
+
+.text-gray-300 {
+  color: var(--gray-300);
+}
+
+.text-gray-400 {
+  color: var(--gray-400);
+}
+
+.text-gray-500 {
+  color: var(--gray-500);
+}
+
+.text-azure {
+  color: var(--azure);
+}
+
+.text-viking {
+  color: var(--viking);
+}
+
+/* Border utilities */
+.border-azure {
+  border-color: var(--azure);
+}
+
+.border-viking {
+  border-color: var(--viking);
+}
+
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.border-white-20 {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.border-white-30 {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Shadow utilities */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-azure {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+.shadow-viking {
+  box-shadow: 0 0 20px rgba(90, 200, 250, 0.5);
+}
+
+/* Glass effect utilities */
+.glass {
+  background: rgba(25, 25, 25, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(15, 15, 20, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Transition utilities */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+/* Transform utilities */
+.hover-scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale-110:hover {
+  transform: scale(1.1);
+}
+
+.hover-translateY-sm:hover {
+  transform: translateY(-2px);
+}
+
+.hover-translateY-md:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon containers */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.icon-circle-sm {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-circle-lg {
+  width: 80px;
+  height: 80px;
+}
+
+/* Modern menu styling using our utility classes */
+.menu-item {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 12px;
+}
+
+.menu-item:hover::before {
+  opacity: 1;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.menu-text {
+  position: relative;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Common gradient background for section titles */
+.section-title-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--azure), var(--viking));
+  border-radius: 3px;
+}

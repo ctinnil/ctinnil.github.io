@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer triangle -->
+  <path d="M466 256L134 450.4L134 61.6L466 256Z" fill="#AAAAAA"/>
+  
+  <!-- Inner triangle -->
+  <path d="M400 256L146 400L146 112L400 256Z" fill="url(#paint0_linear)"/>
+  
+  <!-- Grid lines -->
+  <path d="M146 256L400 256M225 158L310 355M310 158L225 355" stroke="#333333" stroke-width="2" opacity="0.6"/>
+</svg>

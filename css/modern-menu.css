@@ -1,0 +1,355 @@
+/* Modern Menu Styling for Tenebrae.ro */
+
+/* Menu item animation on page load */
+.grid__item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+#home-link {
+  animation-delay: 0.2s;
+}
+
+#team-link {
+  animation-delay: 0.4s;
+}
+
+#projects-link {
+  animation-delay: 0.6s;
+}
+
+#contact-link {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tm-nav-link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  background: rgba(25, 25, 25, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.tm-nav-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 12px;
+}
+
+.tm-nav-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tm-nav-link:hover:before {
+  opacity: 1;
+}
+
+.tm-nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.tm-nav-icon {
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.tm-nav-link:hover .tm-nav-icon {
+  transform: scale(1.1);
+  color: var(--viking) !important;
+  background: rgba(0, 123, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(90, 200, 250, 0.5) !important;
+  border-color: rgba(90, 200, 250, 0.2) !important;
+}
+
+.tm-nav-text {
+  position: relative;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+.tm-nav-link:hover .tm-nav-text {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Product container styling */
+.product {
+  background: transparent;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.product__bg {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  border-radius: 12px;
+  background: radial-gradient(circle at center, rgba(0, 123, 255, 0.1), rgba(90, 200, 250, 0.05));
+  transition: opacity 0.5s ease;
+  border: 1px solid rgba(90, 200, 250, 0.1);
+}
+
+/* Description panel - the expanded content */
+.product__description {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background: rgba(30, 30, 35, 0.97);
+  border-radius: 16px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  animation: fadeIn 0.5s ease;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Styling for content inside product description */
+.product__description h2 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.product__description h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--azure), var(--viking));
+  border-radius: 3px;
+}
+
+.product__description p {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.product__description a {
+  color: var(--viking);
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.product__description a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--viking);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.product__description a:hover {
+  color: var(--azure);
+}
+
+.product__description a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: var(--azure);
+}
+
+.details__bg--down {
+  background: rgba(30, 30, 35, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tm-page-title {
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.tm-page-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--azure), var(--viking));
+  border-radius: 3px;
+}
+
+/* Icon coloring for ALL sections - STRICTLY using only azure and viking */
+.tm-nav-icon {
+  background: rgba(0, 123, 255, 0.2) !important; /* azure with opacity */
+  border: 1px solid rgba(0, 123, 255, 0.1) !important;
+}
+
+.tm-nav-link:hover .tm-nav-icon {
+  color: var(--viking) !important;
+  background: rgba(0, 123, 255, 0.3) !important;
+  box-shadow: 0 0 20px rgba(90, 200, 250, 0.5) !important;
+  border-color: rgba(90, 200, 250, 0.2) !important;
+}
+
+/* ALL sections use the EXACT SAME azure/viking color scheme */
+#home-link .tm-nav-icon {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+#home-link .tm-nav-link:hover .tm-nav-icon {
+  color: var(--azure) !important;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5) !important;
+}
+
+#team-link .tm-nav-icon {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+#team-link .tm-nav-link:hover .tm-nav-icon {
+  color: var(--viking) !important;
+  box-shadow: 0 0 20px rgba(90, 200, 250, 0.5) !important;
+}
+
+.grid__item:nth-child(3) .tm-nav-icon {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+.grid__item:nth-child(3) .tm-nav-link:hover .tm-nav-icon {
+  color: var(--azure) !important;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5) !important;
+}
+
+#contact-link .tm-nav-icon,
+.grid__item:nth-child(4) .tm-nav-icon {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+#contact-link .tm-nav-link:hover .tm-nav-icon,
+.grid__item:nth-child(4) .tm-nav-link:hover .tm-nav-icon {
+  color: var(--viking) !important;
+  box-shadow: 0 0 20px rgba(90, 200, 250, 0.5) !important;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 767px) and (max-width: 991px), (max-width: 440px) {
+  .tm-nav-link {
+    width: 135px;
+    height: 135px;
+  }
+  
+  .tm-nav-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .tm-nav-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 419px) {
+  .tm-nav-link {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .tm-nav-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .fa-3x {
+    font-size: 1.8em;
+  }
+  
+  .tm-nav-text {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+}

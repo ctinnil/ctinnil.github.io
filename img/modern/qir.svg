@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="150" y1="150" x2="350" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AC8FA"/>
+      <stop offset="1" stop-color="#777777"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#shadow)"/>
+  
+  <!-- Quantum Circuit - resembling the original QIR concept -->
+  <g stroke-width="6" stroke-linecap="round">
+    <!-- Horizontal quantum wires -->
+    <line x1="120" y1="180" x2="380" y2="180" stroke="white"/>
+    <line x1="120" y1="250" x2="380" y2="250" stroke="white"/>
+    <line x1="120" y1="320" x2="380" y2="320" stroke="white"/>
+    
+    <!-- Control Points and Quantum gates -->
+    <circle cx="160" cy="180" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="250" cy="180" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="340" cy="180" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    
+    <circle cx="160" cy="250" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="250" cy="250" r="20" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="340" cy="250" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    
+    <circle cx="160" cy="320" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="250" cy="320" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    <circle cx="340" cy="320" r="10" stroke="url(#paint0_linear)" fill="#222222"/>
+    
+    <!-- Control lines -->
+    <line x1="160" y1="190" x2="160" y2="310" stroke="white" stroke-dasharray="5 5"/>
+    <line x1="250" y1="190" x2="250" y2="230" stroke="white"/>
+    <line x1="250" y1="270" x2="250" y2="310" stroke="white"/>
+    <line x1="340" y1="190" x2="340" y2="310" stroke="white" stroke-dasharray="5 5"/>
+    
+    <!-- Entanglement representation -->
+    <path d="M230 250L160 180" stroke="url(#paint1_linear)" stroke-width="4" opacity="0.7"/>
+    <path d="M270 250L340 180" stroke="url(#paint1_linear)" stroke-width="4" opacity="0.7"/>
+    <path d="M230 250L160 320" stroke="url(#paint1_linear)" stroke-width="4" opacity="0.7"/>
+    <path d="M270 250L340 320" stroke="url(#paint1_linear)" stroke-width="4" opacity="0.7"/>
+  </g>
+  
+  <!-- QIR text representation -->
+  <g fill="white">
+    <path d="M190 100H210C221 100 230 109 230 120V130C230 141 221 150 210 150H190V100ZM210 130V120C210 120 210 120 210 120H210C210 120 210 120 210 120V130C210 130 210 130 210 130H210C210 130 210 130 210 130ZM190 130H190V120H190V130Z" />
+    <path d="M240 100H260V150H240V100Z" />
+    <path d="M290 100H310C321 100 330 109 330 120V150H310V120C310 120 310 120 310 120H310C310 120 310 120 310 120H290V100Z" />
+  </g>
+  
+  <!-- Superposition particles -->
+  <circle cx="160" cy="180" r="4" fill="white"/>
+  <circle cx="250" cy="180" r="4" fill="white"/>
+  <circle cx="340" cy="180" r="4" fill="white"/>
+  
+  <circle cx="160" cy="250" r="4" fill="white"/>
+  <circle cx="250" cy="250" r="8" fill="#5AC8FA"/>
+  <circle cx="340" cy="250" r="4" fill="white"/>
+  
+  <circle cx="160" cy="320" r="4" fill="white"/>
+  <circle cx="250" cy="320" r="4" fill="white"/>
+  <circle cx="340" cy="320" r="4" fill="white"/>
+</svg>

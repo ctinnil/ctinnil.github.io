@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="150" y1="150" x2="350" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AC8FA"/>
+      <stop offset="1" stop-color="#007BFF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="600" height="600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+
+  <!-- Lightbulb shape -->
+  <path d="M250 400C310 400 360 350 360 290C360 240 330 200 290 180C290 180 290 120 290 100H210C210 120 210 180 210 180C170 200 140 240 140 290C140 350 190 400 250 400Z" fill="#333333" stroke="white" stroke-width="8"/>
+  
+  <!-- Bulb base -->
+  <path d="M290 400H210C210 410 210 430 210 440H290C290 430 290 410 290 400Z" fill="#222222" stroke="white" stroke-width="6"/>
+  
+  <!-- Circuit board lines inside bulb -->
+  <path d="M210 180L290 180M210 240L290 240M210 300L290 300M230 180L230 300M250 180L250 300M270 180L270 300" stroke="#777777" stroke-width="4"/>
+  
+  <!-- Circuit nodes -->
+  <circle cx="210" cy="180" r="6" fill="#5AC8FA"/>
+  <circle cx="250" cy="180" r="6" fill="#5AC8FA"/>
+  <circle cx="290" cy="180" r="6" fill="#5AC8FA"/>
+  <circle cx="210" cy="240" r="6" fill="#007BFF"/>
+  <circle cx="250" cy="240" r="6" fill="#007BFF"/>
+  <circle cx="290" cy="240" r="6" fill="#007BFF"/>
+  <circle cx="210" cy="300" r="6" fill="#5AC8FA"/>
+  <circle cx="250" cy="300" r="6" fill="#5AC8FA"/>
+  <circle cx="290" cy="300" r="6" fill="#5AC8FA"/>
+  
+  <!-- Electrical socket -->
+  <path d="M200 440H300" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M210 450H290" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 460H280" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Play button in center (data mining concept) -->
+  <path d="M220 220L270 250L220 280V220Z" fill="url(#paint0_linear)" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Outer circuit ring -->
+  <circle cx="250" cy="250" r="100" stroke="url(#paint1_linear)" stroke-width="4" stroke-dasharray="10 5" opacity="0.7"/>
+</svg>

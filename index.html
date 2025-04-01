@@ -7,40 +7,41 @@
     <meta name="keywords" content="Tenebrae, cybersecurity, AI, machine learning, digital forensics, Lumiere, CO5 Datasets, PP_Trefoil">
     <meta property="og:title" content="Tenebrae – Cybersecurity and AI Innovations">
     <meta property="og:description" content="Explore tools, projects, and insights from an expert in cybersecurity and AI at Tenebrae.ro.">
-    <meta property="og:image" content="https://www.tenebrae.ro/img/welcome-1.png">
+    <meta property="og:image" content="https://www.tenebrae.ro/img/modern/png/welcome-1.png">
     <meta property="og:url" content="https://www.tenebrae.ro">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tenebrae – Cybersecurity and AI Innovations">
     <meta name="twitter:description" content="Explore tools, projects, and insights from an expert in cybersecurity and AI at Tenebrae.ro.">
-    <meta name="twitter:image" content="https://www.tenebrae.ro/img/welcome-1.png">
+    <meta name="twitter:image" content="https://www.tenebrae.ro/img/modern/png/welcome-1.png">
     <meta property="og:locale" content="en_US">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com https://www.chatbase.co 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://img.shields.io data:; connect-src 'self' https://www.chatbase.co; frame-src 'self'; object-src 'none';">
     <title>Tenebrae</title>
     <!-- load CSS -->
-    <link rel="preload" href="img/welcome-1.png" as="image">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300" as="style">
-    <link rel="icon" href="https://www.tenebrae.ro/img/welcome-1.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="preload" href="img/modern/png/welcome-1.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap" as="style">
+    <link rel="icon" href="/img/modern/png/welcome-1.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
-
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
-    
+    <link rel="stylesheet" href="css/modern-menu.css">
+    <link rel="stylesheet" href="css/modern-slider.css">
+    <link rel="stylesheet" href="css/tailwind-theme.css">
 </head>
 
 <body>
-    <div id="tm-bg"></div>
+    <div id="tm-bg" role="presentation"></div>
     <div id="tm-wrap">
-        <div class="tm-main-content">
+        <main class="tm-main-content">
             <div class="container tm-site-header-container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
                         <div class="tm-site-header">
                             <h1 class="mb-4">Tenebrae</h1>
-                            <img src="img/underline.png" class="img-fluid mb-4">
+                            <img src="img/modern/png/underline.png" class="img-fluid mb-4" alt="Decorative underline">
                             <p>Ideas, concepts, and projects in the field of applied artificial intelligence</p>        
                         </div>                        
                     </div>
@@ -49,25 +50,29 @@
                             <div class="grid">
                                 <div class="grid__item" id="home-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="About me section">
+                                            <div class="tm-nav-icon icon-circle">
+                                                <img src="img/modern/png/about-me.png" alt="About Me" width="46" height="46" aria-hidden="true">
+                                            </div>
                                             <span class="tm-nav-text">About me</span>
                                             <div class="product__bg"></div>        
                                         </div>                                    
                                         <div class="product__description">
-                                                    <h2 class="tm-page-title">Welcome to Tenebrae</h2>
-                                                    <p>My digital corner, where cybersecurity meets the cutting age of machine learning and artificial intelligence.</p>
-                                                    <p>I’m a cybersecurity expert and AI enthusiast on a mission to unlock the potential of intelligent technologies.</p>
-                                                    <p>With a foundation forged in digital forensics expertise and fortified by multiple certifications in Java and Python, I navigate the complexities of cybersecurity incident response and the Elastic Stack with finesse. </p>
-                                                    <p>My passion for this ever-evolving landscape propels me forward, driving me to continually expand my expertise and conquer new frontiers.</p>
+                                            <h2 class="tm-page-title">Welcome to Tenebrae</h2>
+                                            <p>My digital corner, where cybersecurity meets the cutting edge of machine learning and artificial intelligence.</p>
+                                            <p>I'm a cybersecurity expert and AI enthusiast on a mission to unlock the potential of intelligent technologies.</p>
+                                            <p>With a foundation forged in digital forensics expertise and fortified by multiple certifications in Java and Python, I navigate the complexities of cybersecurity incident response and the Elastic Stack with finesse.</p>
+                                            <p>My passion for this ever-evolving landscape propels me forward, driving me to continually expand my expertise and conquer new frontiers.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="grid__item" id="team-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-asterisk fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Tools section">
+                                            <div class="tm-nav-icon icon-circle">
+                                                <img src="img/modern/png/tools.png" alt="Tools" width="46" height="46" aria-hidden="true">
+                                            </div>
                                             <span class="tm-nav-text">Tools</span>
                                             <div class="product__bg"></div>            
                                         </div>                                     
@@ -80,20 +85,22 @@
                                                 </div>
                                                 <div class="row tm-reverse-sm">
                                                     <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">More tools and valuable materials will be added to this page. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>
+                                                        <p class="mb-4">More tools and valuable materials will be added to this page. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" rel="noopener noreferrer">More</a></p>
                                                     </div>                                                
                                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                        <img src="img/lumiere_logo.png" alt="Lumiere Cyber Data Miner Logo" class="img-fluid">
+                                                        <img src="img/modern/png/lumiere_logo.png" alt="Lumiere Cyber Data Miner Logo" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__item">
+                                <div class="grid__item" id="projects-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-folder-open fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Projects section">
+                                            <div class="tm-nav-icon icon-circle">
+                                                <img src="img/modern/png/projects.png" alt="Projects" width="46" height="46" aria-hidden="true">
+                                            </div>
                                             <span class="tm-nav-text">Projects</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                                 
@@ -106,27 +113,103 @@
                                                 </div>
                                                 <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <p>Please find below some of our projects and work in progress.</p>
+                                                        <p class="text-center"><strong>Please use the arrows to navigate between projects</strong></p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="p-sm-4 p-2 tm-img-container">
-                                                            <div class="tm-img-slider" id="tmImgSlider">
-                                                                <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link"><img src="img/lumiere.gif" alt="Lumiere" class="img-fluid tm-slider-img"></a>
-                                                                <p>Try <strong>Lumiere</strong> on OpenAI Store Lumiere is a Cyber Data Miner specialized in preparing datasets for machine learning (ML) and deep learning (DL) applications. Their expertise encompasses data cleaning, preprocessing, feature extraction, and handling data formatting challenges to ensure datasets are suitable for ML/DL use. Lumiere provides academically professional and detailed responses, akin to academic or professional publications, with a focus on delivering precise information tailored for users with a solid understanding of data science and ML principles. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere">More</a></p>                                                                
-                                                                <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link"><img src="img/CO5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img"></a>
-                                                                <p>Explore <strong>CO5 Datasets</strong> on GitHub, a comprehensive collection of machine learning datasets curated to fuel innovative projects and research. This repository is a treasure trove for data scientists and researchers looking for diverse and high-quality datasets to power machine learning models and analytics. Whether you're working on AI, deep learning, or predictive analytics, find the data you need to push the boundaries of technology. <a href="https://github.com/ctinnil/CY0P5_ML_Datasets">More</a></p>
-                                                                <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link"><img src="img/PP_Trefoil.gif" alt="PP_Trefoil" class="img-fluid tm-slider-img"></a>
-                                                                <p>Check out <strong>PP_Trefoil</strong> on GitHub, a groundbreaking software designed for intricate pattern generation and design. With its unique algorithms, PP_Trefoil enables users to create complex, beautiful patterns effortlessly. Ideal for designers, artists, and creatives looking for innovative design tools. <a href="https://github.com/ctinnil/PP_Trefoil">More</a></p>
-                                                                <a href="https://github.com/ctinnil/Eclair" class="tm-slider-img-link"><img src="img/eclair.gif" alt="Eclair" class="img-fluid tm-slider-img"></a>
-                                                                <p>Discover <strong>Eclair</strong> on GitHub, the lightning-fast software solution that boosts efficiency and performance. Eclair is engineered to streamline operations, offering a seamless user experience. Ideal for businesses and developers needing speed and reliability in their software toolkit. <a href="https://github.com/ctinnil/Eclair">More</a></p>
-                                                                <a href="https://github.com/ctinnil/FruitSalad" class="tm-slider-img-link"><img src="img/fs.gif" alt="FruitSalad" class="img-fluid tm-slider-img"></a>
-                                                                <p>Visit <strong>FruitSalad</strong> on GitHub for a refreshing approach to data visualization and analysis. This versatile tool combines ease of use with powerful functionality, making complex data more accessible and understandable. A must-have for researchers, analysts, and anyone in need of intuitive data insights. <a href="https://github.com/ctinnil/FruitSalad">More</a></p>
-                                                                <a href="https://github.com/ctinnil/QIR" class="tm-slider-img-link"><img src="img/qir.gif" alt="QIR" class="img-fluid tm-slider-img"></a>
-                                                                <p>Find <strong>QIR</strong> on GitHub, the quantum-inspired software that's setting new standards in computational efficiency and problem-solving. QIR offers a unique platform for exploring quantum algorithms in a classical environment, making it perfect for researchers, scientists, and developers interested in quantum computing. <a href="https://github.com/ctinnil/QIR">More</a></p>
-                                                                <a href="https://github.com/ctinnil/badseed" class="tm-slider-img-link"><img src="img/bs.gif" alt="BadSeed" class="img-fluid tm-slider-img"></a>
-                                                                <p>Explore <strong>BadSeed</strong> on GitHub - a cutting-edge software tool designed to enhance data security and integrity. This robust solution offers innovative features for protecting sensitive information, ensuring your data remains safe and uncompromised. Perfect for developers and IT professionals seeking advanced security measures. <a href="https://github.com/ctinnil/badseed">More</a></p>
+                                                            <div class="tm-img-slider single-project-slider" id="tmImgSlider">
+                                                                <div class="tm-project-card">
+                                                                    <h3>Lumiere</h3>
+                                                                    <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/lumiere.png" alt="Lumiere" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">AI Agent</span>
+                                                                        <span class="project-tag">Data Mining</span>
+                                                                        <span class="project-tag">Machine Learning</span>
+                                                                    </div>
+                                                                    <p>Lumiere is an advanced <strong>Cyber Data Miner</strong> available on OpenAI that specializes in transforming raw data into ML-ready datasets. Its expertise spans data cleaning, preprocessing, feature extraction, and solving complex formatting challenges. With a focus on detailed, academically precise responses, Lumiere acts as your personal data scientist, combining cutting-edge techniques with practical solutions for both research and production environments. <a href="https://chat.openai.com/g/g-7GQEoVuPT-lumiere" rel="noopener noreferrer">Try Lumiere</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>CO5 Datasets</h3>
+                                                                    <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/co5.png" alt="CO5 Datasets Logo" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Dataset Collection</span>
+                                                                        <span class="project-tag">Machine Learning</span>
+                                                                        <span class="project-tag">Open Source</span>
+                                                                    </div>
+                                                                    <p>CO5 Datasets is a comprehensive collection of curated machine learning resources designed for researchers and developers. This repository offers high-quality, diverse datasets carefully optimized for training robust AI models across various domains. Each dataset includes detailed documentation, preprocessing scripts, and benchmark information to accelerate your ML development workflow from concept to deployment. <a href="https://github.com/ctinnil/CY0P5_ML_Datasets" rel="noopener noreferrer">Explore Datasets</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>PP_Trefoil</h3>
+                                                                    <a href="https://github.com/ctinnil/PP_Trefoil" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/trefoil.png" alt="PP_Trefoil" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Pattern Generation</span>
+                                                                        <span class="project-tag">Algorithm</span>
+                                                                        <span class="project-tag">Creative Tool</span>
+                                                                    </div>
+                                                                    <p>PP_Trefoil is a groundbreaking pattern generation tool that merges mathematics with design. Using innovative algorithms based on knot theory and complex geometry, it creates intricate visual patterns that can be applied to digital art, textile design, architecture, and more. The software offers an intuitive interface that allows both beginners and experts to create stunning complex patterns that would be nearly impossible to design manually. <a href="https://github.com/ctinnil/PP_Trefoil" rel="noopener noreferrer">View Project</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>Eclair</h3>
+                                                                    <a href="https://github.com/ctinnil/Eclair" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/eclair.png" alt="Eclair" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Performance</span>
+                                                                        <span class="project-tag">Optimization</span>
+                                                                        <span class="project-tag">Real-time Processing</span>
+                                                                    </div>
+                                                                    <p>Eclair is a lightning-fast data processing framework built for maximum performance. Designed for applications where speed is critical, Eclair leverages advanced caching, parallel processing, and low-level optimizations to achieve exceptional throughput. It's particularly valuable for real-time analytics, high-frequency trading systems, and applications processing massive data streams where milliseconds matter. <a href="https://github.com/ctinnil/Eclair" rel="noopener noreferrer">Get Eclair</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>FruitSalad</h3>
+                                                                    <a href="https://github.com/ctinnil/FruitSalad" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/fruitsalad.png" alt="FruitSalad" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Data Visualization</span>
+                                                                        <span class="project-tag">Analytics</span>
+                                                                        <span class="project-tag">User-Friendly</span>
+                                                                    </div>
+                                                                    <p>FruitSalad brings a refreshing approach to data visualization by combining powerful analytics with an accessible interface. This versatile tool transforms complex datasets into intuitive, interactive visualizations that reveal patterns and insights that might otherwise remain hidden. With its modular design and extensive customization options, FruitSalad makes sophisticated data analysis available to users of all technical backgrounds. <a href="https://github.com/ctinnil/FruitSalad" rel="noopener noreferrer">Try FruitSalad</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>QIR</h3>
+                                                                    <a href="https://github.com/ctinnil/QIR" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/qir.png" alt="QIR" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Quantum Computing</span>
+                                                                        <span class="project-tag">Simulation</span>
+                                                                        <span class="project-tag">Research</span>
+                                                                    </div>
+                                                                    <p>QIR (Quantum Inspired Runtime) is an innovative platform that brings quantum computing principles to classical systems. This framework allows researchers and developers to simulate quantum algorithms, explore quantum-inspired optimization techniques, and bridge the gap between quantum theory and practical applications. QIR provides a vital testing ground for quantum concepts without requiring access to actual quantum hardware. <a href="https://github.com/ctinnil/QIR" rel="noopener noreferrer">Explore QIR</a></p>
+                                                                </div>
+                                                                
+                                                                <div class="tm-project-card">
+                                                                    <h3>BadSeed</h3>
+                                                                    <a href="https://github.com/ctinnil/badseed" class="tm-slider-img-link" rel="noopener noreferrer">
+                                                                        <img src="img/modern/png/badseed.png" alt="BadSeed" class="img-fluid tm-slider-img">
+                                                                    </a>
+                                                                    <div class="project-tags">
+                                                                        <span class="project-tag">Cybersecurity</span>
+                                                                        <span class="project-tag">Threat Detection</span>
+                                                                        <span class="project-tag">Data Protection</span>
+                                                                    </div>
+                                                                    <p>BadSeed is a cutting-edge security tool designed to identify and neutralize threats in data ecosystems. Using advanced pattern recognition and anomaly detection, it can identify potential vulnerabilities, suspicious access patterns, and data integrity issues before they become critical problems. BadSeed combines proactive monitoring with powerful encryption and isolation techniques to create a multi-layered defense for your most sensitive information. <a href="https://github.com/ctinnil/badseed" rel="noopener noreferrer">Secure with BadSeed</a></p>
+                                                                </div>
                                                             </div>
                                                         </div>  
                                                     </div>
@@ -135,10 +218,12 @@
                                         </div>       
                                     </div>
                                 </div>
-                                <div class="grid__item">
+                                <div class="grid__item" id="contact-link">
                                     <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-comments fa-3x tm-nav-icon"></i>
+                                        <div class="tm-nav-link glass" tabindex="0" role="button" aria-label="Contact section">
+                                            <div class="tm-nav-icon icon-circle">
+                                                <img src="img/modern/png/contact.png" alt="Contact" width="46" height="46" aria-hidden="true">
+                                            </div>
                                             <span class="tm-nav-text">Contact</span>
                                             <div class="product__bg"></div>             
                                         </div>                                                              
@@ -157,11 +242,11 @@
                                                 <div class="row mb-4">
                                                     <div class="col-12">
                                                         <div class="container">
-                                                            <p align="center">
-                                                                <a href="https://twitter.com/ctinnil"><img src="https://img.shields.io/twitter/follow/ctinnil?style=social" alt="Twitter"></a>
-                                                                <a href="https://github.com/ctinnil"><img src="https://img.shields.io/github/followers/ctinnil?style=social" alt="Github"></a>
-                                                                <a href="https://www.instagram.com/accounts/login/?next=%2Fctinnil%2F&source=follow"><img src="https://img.shields.io/badge/Instagram-white?style=flat&logo=instagram&logoColor=black" alt="Instagram"></a>
-                                                                <a href="mailto:office@tenebrae.ro?subject=Mail from Fan"><img src="https://img.shields.io/badge/Send%20me%20an%20email-white?style=flat&logo=mailboxdotorg&logoColor=black" alt="Email"></a>
+                                                            <p class="text-center">
+                                                                <a href="https://twitter.com/ctinnil" rel="noopener noreferrer" aria-label="Twitter Profile"><img src="https://img.shields.io/twitter/follow/ctinnil?style=social" alt="Twitter"></a>
+                                                                <a href="https://github.com/ctinnil" rel="noopener noreferrer" aria-label="GitHub Profile"><img src="https://img.shields.io/github/followers/ctinnil?style=social" alt="Github"></a>
+                                                                <a href="https://www.instagram.com/ctinnil/" rel="noopener noreferrer" aria-label="Instagram Profile"><img src="https://img.shields.io/badge/Instagram-white?style=flat&logo=instagram&logoColor=black" alt="Instagram"></a>
+                                                                <a href="mailto:office@tenebrae.ro?subject=Mail from Website" aria-label="Email Contact"><img src="https://img.shields.io/badge/Send%20me%20an%20email-white?style=flat&logo=mailboxdotorg&logoColor=black" alt="Email"></a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -177,46 +262,187 @@
             </div>
             <footer>
                 <p class="small tm-copyright-text">
-                    <span>&copy; <script>document.write(new Date().getFullYear());</script> Tenebrae. All rights reserved.</span>
+                    <span>&copy; <span id="currentYear"></span> Tenebrae. All rights reserved.</span>
                 </p>
             </footer>
-        </div> <!-- .tm-main-content -->  
+        </main>
     </div>
-    <!-- load JS -->
-     <!-- <script src="js/jquery-3.6.0.min.js"></script>         <!-- https://jquery.com/ -->    
-    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
-    <script src="js/main.js" defer></script>  
+    
+    <!-- Modern JavaScript loading -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/main.js" defer></script>
+    
     <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Feature detection for CSS variables
+        (function() {
+            if (window.CSS && window.CSS.supports && window.CSS.supports('--a', '0')) {
+                document.documentElement.classList.add('js');
+            } else {
+                const message = 'This website works best with modern browsers that support CSS variables like Chrome, Firefox, Safari, or Edge.';
+                const banner = document.createElement('div');
+                banner.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#ffea8a;color:#000;padding:12px;text-align:center;z-index:9999;font-weight:bold;';
+                banner.textContent = message;
+                document.body.prepend(banner);
+            }
+        })();
+        
+        // Footer positioning
         function setupFooter() {
-            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
-            var main = $('.tm-main-content');
-            if($(window).height() < pageHeight) {
-                main.addClass('tm-footer-relative');
-            }
-            else {
-                main.removeClass('tm-footer-relative');   
+            const pageHeight = document.querySelector('.tm-site-header-container').offsetHeight + 
+                               document.querySelector('footer').offsetHeight + 100;
+            const main = document.querySelector('.tm-main-content');
+            
+            if (window.innerHeight < pageHeight) {
+                main.classList.add('tm-footer-relative');
+            } else {
+                main.classList.remove('tm-footer-relative');   
             }
         }
-        $(function(){
+        
+        // Check if device is mobile
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+        }
+        
+        // Initialize after DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
             setupFooter();
-            $(window).resize(function(){
-                setupFooter();
+            window.addEventListener('resize', setupFooter);
+            
+            // Add modern menu interactions (for non-mobile devices only)
+            const menuItems = document.querySelectorAll('.tm-nav-link');
+            
+            menuItems.forEach(item => {
+                // Only apply hover effects on non-mobile devices
+                if (!isMobile()) {
+                    // Add hover effect with perspective
+                    item.addEventListener('mousemove', function(e) {
+                        const rect = this.getBoundingClientRect();
+                        const x = e.clientX - rect.left - rect.width / 2;
+                        const y = e.clientY - rect.top - rect.height / 2;
+                        const maxDegree = 10;
+                        
+                        // Calculate rotation based on mouse position
+                        const xDeg = (y / (rect.height / 2)) * maxDegree;
+                        const yDeg = (x / (rect.width / 2)) * -maxDegree;
+                        
+                        this.style.transform = `perspective(1000px) rotateX(${xDeg}deg) rotateY(${yDeg}deg) translateY(-5px)`;
+                    });
+                    
+                    // Reset transform on mouse leave
+                    item.addEventListener('mouseleave', function() {
+                        this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+                    });
+                }
+                
+                // Add focus effect for accessibility (for all devices)
+                item.addEventListener('focus', function() {
+                    this.style.transform = 'scale(1.05)';
+                    this.style.boxShadow = '0 0 0 3px rgba(66, 153, 225, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2)';
+                });
+                
+                item.addEventListener('blur', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = '';
+                });
             });
-            $('.tm-current-year').text(new Date().getFullYear());        
+            
+            // Initialize image slider with accessible controls
+            if (document.getElementById('tmImgSlider')) {
+                // Configure slider settings - EXACTLY one project per slide, guaranteed
+                const sliderSettings = {
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    accessibility: true,
+                    adaptiveHeight: false,
+                    autoplay: false,
+                    cssEase: 'ease-in-out',
+                    speed: 500,
+                    fade: true,
+                    touchThreshold: 10,
+                    swipeToSlide: true,
+                    centerMode: false,
+                    centerPadding: '0',
+                    prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><img src="img/modern/png/arrow-left.png" alt="Previous" /></button>',
+                    nextArrow: '<button type="button" class="slick-next" aria-label="Next"><img src="img/modern/png/arrow-right.png" alt="Next" /></button>',
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                arrows: true,
+                                dots: true,
+                                adaptiveHeight: true,
+                                fade: true // Keep fade effect on mobile
+                            }
+                        }
+                    ]
+                };
+                
+                $('#tmImgSlider').slick(sliderSettings);
+                
+                // Force single project view
+                $('#tmImgSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                    // Hide all slides before showing the next one
+                    $(this).find('.slick-slide').css('opacity', 0);
+                    
+                    // Cleanup any stuck slides
+                    setTimeout(function() {
+                        $('.slick-slide:not(.slick-current)').css({
+                            'display': 'none',
+                            'visibility': 'hidden'
+                        });
+                    }, 50);
+                });
+                
+                // Add animation delay to each slide based on its index
+                $('#tmImgSlider .slick-slide').each(function(index) {
+                    $(this).css('--slide-index', index);
+                    $(this).attr('data-project-index', index);
+                });
+                
+                // Ensure proper mobile rendering
+                $(window).on('resize orientationchange', function() {
+                    $('#tmImgSlider').slick('resize');
+                    
+                    // Update slider settings if device type changes
+                    const currentMobile = isMobile();
+                    const slickObj = $('#tmImgSlider').slick('getSlick');
+                    
+                    if (currentMobile !== slickObj.options.isMobile) {
+                        // Reinitialize slider with updated settings
+                        $('#tmImgSlider').slick('unslick');
+                        sliderSettings.autoplay = !currentMobile;
+                        sliderSettings.fade = !currentMobile;
+                        sliderSettings.speed = currentMobile ? 500 : 800;
+                        sliderSettings.isMobile = currentMobile;
+                        $('#tmImgSlider').slick(sliderSettings);
+                    }
+                });
+                
+                // Add swipe hint on mobile
+                if (isMobile()) {
+                    const swipeHint = document.createElement('div');
+                    swipeHint.className = 'swipe-hint';
+                    swipeHint.innerHTML = '<img src="img/modern/png/swipe.png" alt="Swipe" width="20" height="20" style="display: inline-block; margin-right: 5px;"> Swipe to navigate projects';
+                    document.querySelector('.tm-img-container').appendChild(swipeHint);
+                    
+                    // Hide hint after a few seconds
+                    setTimeout(function() {
+                        swipeHint.style.opacity = '0';
+                        setTimeout(function() {
+                            swipeHint.remove();
+                        }, 1000);
+                    }, 3000);
+                }
+            }
         });
-    </script>
-    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
-    <script>
-        window.embeddedChatbotConfig = {
-        chatbotId: "OXXFUEgAa3ZlPzKRWp75u",
-        domain: "www.chatbase.co"
-        }
-        </script>
-        <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="OXXFUEgAa3ZlPzKRWp75u"
-        domain="www.chatbase.co"
-        defer>
     </script>
 </body>
 </html>

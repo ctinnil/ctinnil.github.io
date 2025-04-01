@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#shadow)"/>
+  
+  <!-- Trefoil Knot - resembling the original trefoil concept -->
+  <path d="M250 130C235 130 220 135 210 145C200 155 195 170 195 185C195 190 196 195 197 200C198 205 200 209 203 213C183 223 170 243 170 265C170 285 181 303 197 315C194 320 192 325 190 330C188 335 187 340 187 345C187 360 194 375 205 385C216 395 230 400 245 400C260 400 274 395 285 385C296 375 303 360 303 345C303 340 302 335 300 330C298 325 296 320 293 315C309 303 320 285 320 265C320 243 307 223 287 213C290 209 292 205 293 200C294 195 295 190 295 185C295 170 290 155 280 145C270 135 264 130 250 130Z" stroke="white" stroke-width="8" fill="none"/>
+  
+  <!-- Trefoil Overlay Design - to enhance the original look -->
+  <path d="M250 140C238 140 226 144 218 152C210 160 206 172 206 185C206 189 207 193 208 197C209 201 210 204 213 207C197 215 186 231 186 250C186 266 195 281 207 290C205 294 203 298 201 302C199 306 198 310 198 315C198 327 204 339 213 347C222 355 233 359 245 359C257 359 268 355 277 347C286 339 292 327 292 315C292 310 291 306 289 302C287 298 285 294 283 290C295 281 304 266 304 250C304 231 293 215 277 207C280 204 281 201 282 197C283 193 284 189 284 185C284 172 280 160 272 152C264 144 260 140 250 140Z" stroke="url(#paint0_linear)" stroke-width="5" fill="none"/>
+  
+  <!-- Dots at the intersections -->
+  <circle cx="206" cy="185" r="10" fill="#5AC8FA"/>
+  <circle cx="250" cy="250" r="12" fill="white"/>
+  <circle cx="198" cy="315" r="10" fill="#5AC8FA"/>
+  <circle cx="302" cy="315" r="10" fill="#007BFF"/>
+  <circle cx="294" cy="185" r="10" fill="#007BFF"/>
+  
+  <!-- Central circle connecting all parts -->
+  <circle cx="250" cy="250" r="25" fill="#222222" stroke="white" stroke-width="4"/>
+</svg>

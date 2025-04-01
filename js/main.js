@@ -152,7 +152,7 @@
                 }
             });
 		}
-		// Slick Carousel
+		// Slick Carousel - Configured for EXACTLY one project at a time
         setCarousel() {
           
 	        var slider = $('.details .tm-img-slider');
@@ -164,20 +164,27 @@
 		        }
 
 		        if($(window).width() > 767){
-		            // Slick carousel
+		            // Slick carousel - EXACTLY one project at a time
 		            slider.slick({
 		                dots: true,
 		                infinite: true,
-		                slidesToShow: 4,
-		                slidesToScroll: 3
+		                slidesToShow: 1,
+		                slidesToScroll: 1,
+		                fade: true,
+		                cssEase: 'ease-in-out',
+		                speed: 500
 		            });
 		        }
 		        else {
 		            slider.slick({
 			            dots: true,
 			            infinite: true,
-			            slidesToShow: 2,
-			            slidesToScroll: 1
+			            slidesToShow: 1,
+			            slidesToScroll: 1,
+			            fade: true,
+			            adaptiveHeight: true,
+			            cssEase: 'ease-in-out',
+			            speed: 500
 		        	});
 		     	}	
 	        }          

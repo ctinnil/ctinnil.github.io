@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="100" y1="250" x2="300" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AC8FA"/>
+      <stop offset="1" stop-color="#007BFF"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="200" y1="100" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#AAAAAA"/>
+    </linearGradient>
+    <filter id="filter0_d" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  
+  <!-- Circular background -->
+  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#filter0_d)"/>
+  <circle cx="250" cy="250" r="190" fill="#222222" stroke="#AAAAAA" stroke-width="2"/>
+  
+  <!-- Wrench icon -->
+  <path d="M300 140C330 140 355 165 355 195C355 201.7 353.8 208.2 351.7 214.1L390 252.4L354.3 288.1L316 249.8C310.1 251.9 303.7 253 297 253C267 253 242 228 242 198C242 191.4 243.1 185 245.2 179.1L274.2 208.1L291.9 190.4L262.9 161.4C268.8 159.3 275.2 158.2 281.8 158.2C285.3 158.2 288.7 158.6 292 159.3" stroke="url(#paint0_linear)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Screwdriver icon -->
+  <path d="M160 310L220 250L250 280L190 340L160 310Z" stroke="url(#paint1_linear)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220 250L180 210C175 205 175 197 180 192L200 172C205 167 213 167 218 172L258 212" stroke="url(#paint1_linear)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Gear icon -->
+  <path d="M250 160C255.5 160 260 164.5 260 170V180.9C267.2 182.2 274 184.8 280 188.3L287.8 180.5C291.7 176.6 298 176.6 301.9 180.5C305.8 184.4 305.8 190.7 301.9 194.6L294.1 202.4C297.6 208.4 300.2 215.2 301.5 222.4H312.4C317.9 222.4 322.4 226.9 322.4 232.4C322.4 237.9 317.9 242.4 312.4 242.4H301.5C300.2 249.6 297.6 256.4 294.1 262.4L301.9 270.2C305.8 274.1 305.8 280.4 301.9 284.3C298 288.2 291.7 288.2 287.8 284.3L280 276.5C274 280 267.2 282.6 260 283.9V294.8C260 300.3 255.5 304.8 250 304.8C244.5 304.8 240 300.3 240 294.8V283.9C232.8 282.6 226 280 220 276.5L212.2 284.3C208.3 288.2 202 288.2 198.1 284.3C194.2 280.4 194.2 274.1 198.1 270.2L205.9 262.4C202.4 256.4 199.8 249.6 198.5 242.4H187.6C182.1 242.4 177.6 237.9 177.6 232.4C177.6 226.9 182.1 222.4 187.6 222.4H198.5C199.8 215.2 202.4 208.4 205.9 202.4L198.1 194.6C194.2 190.7 194.2 184.4 198.1 180.5C202 176.6 208.3 176.6 212.2 180.5L220 188.3C226 184.8 232.8 182.2 240 180.9V170C240 164.5 244.5 160 250 160Z" stroke="url(#paint2_linear)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Central dot -->
+  <circle cx="250" cy="232.4" r="25" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

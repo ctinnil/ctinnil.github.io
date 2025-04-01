@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="100" y1="100" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#007BFF"/>
+      <stop offset="1" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="150" y1="150" x2="350" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AC8FA"/>
+      <stop offset="1" stop-color="#007BFF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="250" cy="250" r="200" fill="#333333" filter="url(#shadow)"/>
+  
+  <!-- Light rays - resembling the original lumiere (light) concept -->
+  <g opacity="0.7">
+    <path d="M250 80L270 200H230L250 80Z" fill="white"/>
+    <path d="M250 420L270 300H230L250 420Z" fill="white"/>
+    <path d="M80 250L200 230V270L80 250Z" fill="white"/>
+    <path d="M420 250L300 230V270L420 250Z" fill="white"/>
+    
+    <!-- Diagonal rays -->
+    <path d="M148 148L232 232H212L148 148Z" fill="white"/>
+    <path d="M352 148L268 232H288L352 148Z" fill="white"/>
+    <path d="M148 352L232 268H212L148 352Z" fill="white"/>
+    <path d="M352 352L268 268H288L352 352Z" fill="white"/>
+  </g>
+  
+  <!-- Central element - data mining concept -->
+  <circle cx="250" cy="250" r="80" fill="#222222" stroke="url(#paint0_linear)" stroke-width="10"/>
+  
+  <!-- Data visualization elements -->
+  <g stroke="url(#paint1_linear)" stroke-width="6" stroke-linecap="round">
+    <!-- Data points and connections -->
+    <circle cx="250" cy="220" r="8" fill="#222222"/>
+    <circle cx="280" cy="260" r="8" fill="#222222"/>
+    <circle cx="230" cy="280" r="8" fill="#222222"/>
+    <circle cx="260" cy="300" r="8" fill="#222222"/>
+    <circle cx="210" cy="250" r="8" fill="#222222"/>
+    
+    <!-- Connection lines -->
+    <line x1="250" y1="220" x2="280" y2="260"/>
+    <line x1="280" y1="260" x2="230" y2="280"/>
+    <line x1="230" y1="280" x2="260" y2="300"/>
+    <line x1="230" y1="280" x2="210" y2="250"/>
+    <line x1="210" y1="250" x2="250" y2="220"/>
+  </g>
+  
+  <!-- Central dot -->
+  <circle cx="250" cy="250" r="15" fill="white"/>
+  
+  <!-- Outer ring -->
+  <circle cx="250" cy="250" r="120" stroke="white" stroke-width="4" stroke-dasharray="20 10" opacity="0.5"/>
+</svg>
