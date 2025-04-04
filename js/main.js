@@ -168,15 +168,15 @@
 		            slider.slick({
 		                dots: true,
 		                infinite: true,
-		                slidesToShow: 4,
-		                slidesToScroll: 3
+		                slidesToShow: 1,
+		                slidesToScroll: 1
 		            });
 		        }
 		        else {
 		            slider.slick({
 			            dots: true,
 			            infinite: true,
-			            slidesToShow: 2,
+			            slidesToShow: 1,
 			            slidesToScroll: 1
 		        	});
 		     	}	
@@ -217,5 +217,3 @@
 
 	DOM.details = new Details();
 };
-
-
