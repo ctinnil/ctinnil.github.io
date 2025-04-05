@@ -241,45 +241,29 @@
     
     <!-- FingerprintJS integration for visitor identification -->
     <script>
-    // Initialize FingerprintJS when the DOM is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        // Load the FingerprintJS library from CDN
-        const fpScript = document.createElement('script');
-        fpScript.src = 'https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js';
-        fpScript.async = true;
-        
-        fpScript.onload = function() {
-            // The FingerprintJS library is loaded, initialize it
-            if (window.FingerprintJS) {
-                FingerprintJS.load()
-                    .then(fp => fp.get())
-                    .then(result => {
-                        // The visitor identifier is stored in the visitorId property
-                        const visitorId = result.visitorId;
-                        console.log('Visitor ID:', visitorId);
-                        
-                        // Store the visitor ID in a way accessible to other scripts
-                        window.tenebraeVisitorData = {
-                            visitorId: visitorId,
-                            timestamp: new Date().toISOString(),
-                            components: result.components
-                        };
-                        
-                        // You can send this data to your analytics or use it for custom purposes
-                        // Example: trigger an event when fingerprint is complete
-                        const fpEvent = new CustomEvent('fingerprintComplete', { 
-                            detail: { visitorId: visitorId } 
-                        });
-                        document.dispatchEvent(fpEvent);
-                    })
-                    .catch(error => {
-                        console.error('FingerprintJS error:', error);
-                    });
-            }
-        };
-        
-        document.head.appendChild(fpScript);
-    });
+    (async () => {
+      const visitorData = window.tenebraeVisitorData;
+      if (!visitorData) return;
+    
+      const visitorId = visitorData.id;
+      const visitKey = `visits-${visitorId}`;
+      const visitCount = parseInt(localStorage.getItem(visitKey) || '1');
+      localStorage.setItem(visitKey, visitCount + 1);
+    
+      const payload = {
+        visitorId,
+        timestamp: new Date().toISOString(),
+        referrer: document.referrer,
+        pageUrl: window.location.href,
+        visitCount
+      };
+    
+      await fetch('https://chatbase-hmac-backend.vercel.app/api/track-visit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    })();
     </script>
 
     <script>
