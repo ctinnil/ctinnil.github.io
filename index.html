@@ -218,6 +218,26 @@
             }
         })();
         
+        // Global keyboard navigation for slider
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('tmImgSlider')) {
+                // Check if we're not in an input field or textarea
+                const target = e.target.tagName.toLowerCase();
+                if (target !== 'input' && target !== 'textarea') {
+                    if (e.which === 37 || e.keyCode === 37) { // Left arrow key
+                        e.preventDefault();
+                        $('#tmImgSlider').slick('slickPrev');
+                        console.log('Global left arrow key pressed');
+                    }
+                    if (e.which === 39 || e.keyCode === 39) { // Right arrow key
+                        e.preventDefault();
+                        $('#tmImgSlider').slick('slickNext');
+                        console.log('Global right arrow key pressed');
+                    }
+                }
+            }
+        });
+        
         // Footer positioning
         function setupFooter() {
             const pageHeight = document.querySelector('.tm-site-header-container').offsetHeight + 
@@ -257,12 +277,28 @@
                 });
                 
                 // Add keyboard navigation for the slider
-                $(document).on('keydown', function(e) {
-                    if (e.keyCode === 37) { // Left arrow key
-                        $('#tmImgSlider').slick('slickPrev');
+                $(document).keydown(function(e) {
+                    // Check if we're not in an input field or textarea
+                    const target = e.target.tagName.toLowerCase();
+                    if (target !== 'input' && target !== 'textarea') {
+                        if (e.which === 37) { // Left arrow key
+                            e.preventDefault();
+                            $('#tmImgSlider').slick('slickPrev');
+                            console.log('Left arrow key pressed');
+                        }
+                        if (e.which === 39) { // Right arrow key
+                            e.preventDefault();
+                            $('#tmImgSlider').slick('slickNext');
+                            console.log('Right arrow key pressed');
+                        }
                     }
-                    if (e.keyCode === 39) { // Right arrow key
-                        $('#tmImgSlider').slick('slickNext');
+                });
+                
+                // Make sure slider controls are keyboard accessible
+                $('.slick-next, .slick-prev').attr('tabindex', '0').on('keydown', function(e) {
+                    if (e.which === 13 || e.which === 32) { // Enter or Space key
+                        e.preventDefault();
+                        $(this).click();
                     }
                 });
             }
