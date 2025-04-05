@@ -17,7 +17,7 @@
     <meta property="og:locale" content="en_US">
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' https://code.jquery.com https://www.chatbase.co 'unsafe-inline';
+      script-src 'self' https://code.jquery.com https://www.chatbase.co https://cdn.jsdelivr.net 'unsafe-inline';
       style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
       font-src 'self' https://fonts.gstatic.com;
       img-src 'self' https://img.shields.io data:;
@@ -238,6 +238,49 @@
     <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="OXXFUEgAa3ZlPzKRWp75u";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
+    
+    <!-- FingerprintJS integration for visitor identification -->
+    <script>
+    // Initialize FingerprintJS when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load the FingerprintJS library from CDN
+        const fpScript = document.createElement('script');
+        fpScript.src = 'https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js';
+        fpScript.async = true;
+        
+        fpScript.onload = function() {
+            // The FingerprintJS library is loaded, initialize it
+            if (window.FingerprintJS) {
+                FingerprintJS.load()
+                    .then(fp => fp.get())
+                    .then(result => {
+                        // The visitor identifier is stored in the visitorId property
+                        const visitorId = result.visitorId;
+                        console.log('Visitor ID:', visitorId);
+                        
+                        // Store the visitor ID in a way accessible to other scripts
+                        window.tenebraeVisitorData = {
+                            visitorId: visitorId,
+                            timestamp: new Date().toISOString(),
+                            components: result.components
+                        };
+                        
+                        // You can send this data to your analytics or use it for custom purposes
+                        // Example: trigger an event when fingerprint is complete
+                        const fpEvent = new CustomEvent('fingerprintComplete', { 
+                            detail: { visitorId: visitorId } 
+                        });
+                        document.dispatchEvent(fpEvent);
+                    })
+                    .catch(error => {
+                        console.error('FingerprintJS error:', error);
+                    });
+            }
+        };
+        
+        document.head.appendChild(fpScript);
+    });
+    </script>
 
     <script>
         // Set current year in footer
@@ -292,7 +335,24 @@
             setupFooter();
             window.addEventListener('resize', setupFooter);
             
-            // Initialize image slider with accessible controls
+            // Visitor tracking utility
+        window.tenebrae = window.tenebrae || {};
+        window.tenebrae.visitor = {
+            getVisitorId: function() {
+                return window.tenebraeVisitorData ? window.tenebraeVisitorData.visitorId : null;
+            },
+            onFingerprintReady: function(callback) {
+                if (window.tenebraeVisitorData) {
+                    callback(window.tenebraeVisitorData.visitorId);
+                } else {
+                    document.addEventListener('fingerprintComplete', function(e) {
+                        callback(e.detail.visitorId);
+                    });
+                }
+            }
+        };
+        
+        // Initialize image slider with accessible controls
             if (document.getElementById('tmImgSlider')) {
                 $('#tmImgSlider').slick({
                     dots: true,
@@ -336,6 +396,36 @@
                     }
                 });
             }
+            
+            // Example usage of the fingerprint for enhanced user experience
+            window.tenebrae.visitor.onFingerprintReady(function(visitorId) {
+                // Store a simple counter of visits in localStorage, keyed by the visitorId
+                const storageKey = `tenebrae_visits_${visitorId}`;
+                let visitCount = parseInt(localStorage.getItem(storageKey) || '0');
+                visitCount++;
+                localStorage.setItem(storageKey, visitCount.toString());
+                
+                // For returning visitors (2+ visits), show a subtle welcome back message
+                if (visitCount > 1) {
+                    setTimeout(function() {
+                        const welcomeMsg = document.createElement('div');
+                        welcomeMsg.className = 'welcome-back';
+                        welcomeMsg.style.cssText = 'position:fixed;bottom:80px;right:20px;background:rgba(0,0,0,0.7);color:white;padding:12px;border-radius:4px;font-size:14px;z-index:9999;opacity:0;transition:opacity 0.5s;box-shadow:0 2px 8px rgba(0,0,0,0.3);';
+                        welcomeMsg.innerHTML = `Welcome back! This is your visit #${visitCount}.`;
+                        
+                        document.body.appendChild(welcomeMsg);
+                        
+                        // Fade in the message
+                        setTimeout(() => welcomeMsg.style.opacity = '1', 100);
+                        
+                        // Remove the message after 5 seconds
+                        setTimeout(() => {
+                            welcomeMsg.style.opacity = '0';
+                            setTimeout(() => welcomeMsg.remove(), 500);
+                        }, 5000);
+                    }, 3000);
+                }
+            });
         });
     </script>
 </body>
