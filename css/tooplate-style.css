@@ -232,8 +232,9 @@ p {
 
 .slick-dots li button:before {
   font-size: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .slick-dots {
@@ -247,8 +248,25 @@ p {
 }
 
 .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: deepskyblue;
+  opacity: 1;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+               0 0 10px rgba(255, 255, 255, 0.6),
+               0 0 15px rgba(255, 255, 255, 0.4);
+  animation: glowPulse 1.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  to {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 1),
+                 0 0 14px rgba(255, 255, 255, 0.8),
+                 0 0 21px rgba(255, 255, 255, 0.6);
+  }
 }
 
 /* Contact */
