@@ -255,6 +255,16 @@
                     accessibility: true,
                     adaptiveHeight: true
                 });
+                
+                // Add keyboard navigation for the slider
+                $(document).on('keydown', function(e) {
+                    if (e.keyCode === 37) { // Left arrow key
+                        $('#tmImgSlider').slick('slickPrev');
+                    }
+                    if (e.keyCode === 39) { // Right arrow key
+                        $('#tmImgSlider').slick('slickNext');
+                    }
+                });
             }
         });
     </script>
