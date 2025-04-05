@@ -228,8 +228,8 @@
     <!-- Chatbot integration with updated Chatbase script -->
     <script>
       const userId = "test@example.com"; // Static or from localStorage in the future
-    
-      fetch("https://your-vercel-project.vercel.app/api/chatbase-token?userId=" + userId)
+      
+        fetch("https://chatbase-hmac-backend-9894qj93v-ctinnils-projects.vercel.app/api/chatbase-token?userId=" + userId)
         .then(res => res.json())
         .then(data => {
           window.chatbaseConfig = {
