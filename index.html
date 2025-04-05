@@ -236,46 +236,7 @@
     
     <!-- Chatbot integration with updated Chatbase script -->
     <script>
-      const userId = "test@example.com"; // You can replace this with a dynamic value later
-    
-      fetch("https://chatbase-hmac-backend-9894qj93v-ctinnils-projects.vercel.app/api/chatbase-token?userId=" + encodeURIComponent(userId))
-        .then(res => res.json())
-        .then(data => {
-          window.chatbaseConfig = {
-            chatbotId: "OXXFUEgAa3ZlPzKRWp75u", // Replace with your actual Chatbase chatbot ID
-            userId: data.userId,
-            signature: data.signature
-          };
-    
-          (function(){
-            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-              window.chatbase = (...args) => {
-                if (!window.chatbase.q) window.chatbase.q = [];
-                window.chatbase.q.push(args);
-              };
-              window.chatbase = new Proxy(window.chatbase, {
-                get(target, prop) {
-                  if (prop === "q") return target.q;
-                  return (...args) => target(prop, ...args);
-                }
-              });
-            }
-    
-            const onLoad = function() {
-              const script = document.createElement("script");
-              script.src = "https://www.chatbase.co/embed.min.js";
-              script.id = "OXXFUEgAa3ZlPzKRWp75u"; // Same as chatbotId
-              script.domain = "www.chatbase.co";
-              document.body.appendChild(script);
-            };
-    
-            if (document.readyState === "complete") {
-              onLoad();
-            } else {
-              window.addEventListener("load", onLoad);
-            }
-          })();
-        });
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="OXXFUEgAa3ZlPzKRWp75u";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
 
     <script>
